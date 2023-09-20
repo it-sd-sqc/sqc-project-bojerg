@@ -10,4 +10,8 @@ app.listen(port, () => {
   console.log(`app listening on port ${port}`)
 })
 
+app.get('/', function (req, res) {
+  res.render('pages/index')
+})
+
 // adapted from https://expressjs.com/en/starter/hello-world.html
