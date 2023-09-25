@@ -27,16 +27,6 @@ export const query = async function (sql, params) {
   return results
 }
 
-export const getTableOfContents = async function () {
-  const sql = 
-  `SELECT * FROM section;`
-
-  const chapters = await query(sql)
-  chapters.forEach( (c) => {
-    console.log(c)
-  })
-}
-
 express()
   .use(express.static('./public/'))
   .set('views', 'views')
@@ -48,10 +38,11 @@ express()
     res.render('pages/about')
   })
   .get('/book', async function (req, res) {
-    getTableOfContents()
-    //res.render('pages/book', {chapters, sections})
+    const index = await query('SELECT * FROM section;')
+    res.render('pages/book', { index })
   })
   .get('/book/:ch(\\d+)', async function (req, res) {
-    res.render('pages/book')
+    const content = "?"
+    res.render('pages/section', { content })
   })
   .listen(port, () => { console.log(`app listening on port ${port}`) })
