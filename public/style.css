@@ -84,3 +84,12 @@ h1, h2, h3, hr {
   background-color: var(--bg-dark-mode-accent);
   color: var(--off-white);
 }
+
+#chapter-list {
+	display: flex;
+	flex-direction: column;
+}
+
+#chapter-list > h2, ol {
+	align-self: center;
+}
