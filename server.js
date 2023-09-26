@@ -27,6 +27,19 @@ export const query = async function (sql, params) {
   return results
 }
 
+export const tableOfContents = async function () {
+	const data = await query('SELECT chapter_id, title, number FROM section;')
+	const table = {}
+	data.forEach( (row) => {
+		if(row.number === 0){
+			table[row.chapter_id] = {}
+		} 
+		table[row.chapter_id][row.number] = row.title
+	})
+	
+	return table
+}
+
 express()
   .use(express.static('./public/'))
   .set('views', 'views')
@@ -38,8 +51,8 @@ express()
     res.render('pages/about')
   })
   .get('/book', async function (req, res) {
-    const index = await query('SELECT * FROM section;')
-    res.render('pages/book', { index })
+    const table = await tableOfContents()
+	res.render('pages/book', { table })
   })
   .get('/book/:ch(\\d+)', async function (req, res) {
     const content = "?"

@@ -2,10 +2,19 @@
 <div class="content-div" id="chapter-list">
   <h2 id="chapter-list-item">Table of Contents</h2>
   <ol id="chapter-list-item">
-  <% let i = 1 %>
-  <% while(table[i]) { %>
-	<li id="chapter-list-item"><%= table[i++][0] %></li>
-  <% } %>
+  <% let chapter = 1 %>
+  <% while(table[chapter]) { %>
+	<li id="chapter-list-item"><%= table[chapter][0] %>
+	<ol id="section-sublist" style="display: none;">
+	<% let section = 1 %>
+    <% while(table[chapter][section]) { %>
+	  <li><%= table[chapter][section] %></li>
+	  <% section++
+    } %>
+	</ol>
+	</li>
+	<% chapter++
+  } %>
   </ol>
 </div>
 <%- include('../shared/footer.ejs') %>
