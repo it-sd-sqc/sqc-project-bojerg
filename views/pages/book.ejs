@@ -1,19 +1,19 @@
 <%- include('../shared/header.ejs') %>
 <div class="content-div" id="chapter-list">
-  <h2 id="chapter-list-item">Table of Contents</h2>
-  <ol id="chapter-list-item">
+  <h2 class="chapter-list-item">Table of Contents</h2>
+  <ol class="chapter-list-item">
   <% let chapter = 1 %>
   <% while(table[chapter]) { %>
-	<li id="chapter-list-item"><%= table[chapter][0] %>
-	<ol id="section-sublist" style="display: none;">
-	<% let section = 1 %>
+	  <li class="chapter-list-item"><a href="/book/<%= chapter %>"><%= table[chapter][0] %></a>
+	  <ol class="section-sublist" id="<%= chapter%>" style="display: none;">
+    <% let section = 1 %>
     <% while(table[chapter][section]) { %>
-	  <li><%= table[chapter][section] %></li>
-	  <% section++
+	    <li><%= table[chapter][section] %></a></li>
+	    <% section++
     } %>
-	</ol>
-	</li>
-	<% chapter++
+  	</ol>
+	  </li>
+	  <% chapter++
   } %>
   </ol>
 </div>
