@@ -86,10 +86,15 @@ h1, h2, h3, hr {
 }
 
 #chapter-list {
+	align-self: center;
 	display: flex;
 	flex-direction: column;
 }
 
-#chapter-list > h2, ol {
+#chapter-list-item {
 	align-self: center;
+}
+
+ol {
+	padding-left: inherit;
 }

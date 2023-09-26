@@ -100,6 +100,11 @@ bookParts.forEach(
       } else {
         chapterAndSection[1] = Number(chapterAndSection[1])
       }
+	  
+	  // Remove chapter numbers from title string if present
+	  if(title.split('.').length > 1) {
+		title = title.split('.')[1].replace(/[0-9]/g, '')
+	  }
 
       // Add chapter to object if not exists
       if (!(chapterAndSection[0] in chapters)) {
@@ -108,7 +113,7 @@ bookParts.forEach(
         chapters[chapterAndSection[0]].sections = {}
       }
 
-      // Add section to object (reminder, treating intro to chapter as section 0)
+      // Add section to object (reminder, treating intro to chapter as section 0)	  
       chapters[chapterAndSection[0]].sections[chapterAndSection[1]] = {}
       chapters[chapterAndSection[0]].sections[chapterAndSection[1]].title = title
       chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts = {}

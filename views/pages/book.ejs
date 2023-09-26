@@ -1,10 +1,10 @@
 <%- include('../shared/header.ejs') %>
 <div class="content-div" id="chapter-list">
-  <h2>Table of Contents</h2>
-  <ol>
+  <h2 id="chapter-list-item">Table of Contents</h2>
+  <ol id="chapter-list-item">
   <% let i = 1 %>
   <% while(table[i]) { %>
-	<li><%= table[i++][0] %></li>
+	<li id="chapter-list-item"><%= table[i++][0] %></li>
   <% } %>
   </ol>
 </div>
