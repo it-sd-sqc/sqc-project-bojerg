@@ -27,9 +27,9 @@ export const query = async function (sql, params) {
   return results
 }
 
-export const tableOfContents = async function () {
+export const getTableOfContents = async function () {
 	const data = await query('SELECT chapter_id, title, number FROM section;')
-	const table = {}
+	let table = {}
 	data.forEach( (row) => {
 		if(row.number === 0){
 			table[row.chapter_id] = {}
@@ -38,6 +38,13 @@ export const tableOfContents = async function () {
 	})
 	
 	return table
+}
+
+export const getChapter = async function (number) {
+  const sql = `SELECT section.title, element.section_id, element.content 
+  FROM section RIGHT JOIN element ON section.id = element.section_id
+  WHERE section.chapter_id = ${number}`
+  return await query(sql)
 }
 
 express()
@@ -51,11 +58,17 @@ express()
     res.render('pages/about')
   })
   .get('/book', async function (req, res) {
-    const table = await tableOfContents()
+    const table = await getTableOfContents()
 	res.render('pages/book', { table })
   })
   .get('/book/:ch(\\d+)', async function (req, res) {
-    const content = "?"
-    res.render('pages/section', { content })
+    const chapter = req.params.ch
+    const sections = await getChapter(chapter)
+    if(sections[0]?.title) {
+      res.render('pages/section', { sections, chapter })
+    } else {
+      res.redirect('/book')
+    }
+    
   })
   .listen(port, () => { console.log(`app listening on port ${port}`) })

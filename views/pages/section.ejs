@@ -1,6 +1,26 @@
 <%- include('../shared/header.ejs') %>
 <div class="content-div">
-  <h2>Welcome</h2>
-  <p>Site is a work in progress</p>
+  <section>
+  <% 
+  let lastSectionId = -1
+  let first = true
+  sections.forEach( (part) => {
+    if(part.section_id !== lastSectionId) {
+      //Should write the Title
+      lastSectionId = part.section_id
+
+      if(first) {
+        %> <h2><%= chapter + '. ' + part.title %></h2> <%
+        first = false
+      } else {
+        %> </section><section> <h3><%= chapter + '.' + part.section_id + ' ' + part.title %></h3> <%
+      }
+    } else {
+      //Another element to write in the section
+      //TODO implement different element types
+      %> <p><%= part.content %></p> <%
+    }
+  }) %>
+</section>
 </div>
 <%- include('../shared/footer.ejs') %>
