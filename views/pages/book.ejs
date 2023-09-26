@@ -1,0 +1,11 @@
+<%- include('../shared/header.ejs') %>
+<div class="content-div">
+  <h2>Table of Contents</h2>
+  <ol>
+  <% let i = 1 %>
+  <% while(table[i]) { %>
+	<li><%= table[i++][0] %></li>
+  <% } %>
+  </ol>
+</div>
+<%- include('../shared/footer.ejs') %>
