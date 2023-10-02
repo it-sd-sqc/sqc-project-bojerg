@@ -43,7 +43,8 @@ export const getTableOfContents = async function () {
 export const getChapter = async function (number) {
   const sql = `SELECT section.title, section.number AS sect_num, element.section_id, element.content 
   FROM section RIGHT JOIN element ON section.id = element.section_id
-  WHERE section.chapter_id = ${number}`
+  WHERE section.chapter_id = ${number}
+  ORDER BY section_id ASC`
   return await query(sql)
 }
 
