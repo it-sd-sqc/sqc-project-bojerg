@@ -140,6 +140,7 @@ bookParts.forEach(
 
             // detect type, default is paragraph
             let type = TYPE_CODE.paragraph
+            let content = part.innerText
 
             if (part.classList?.contains('letter')) {
               // letter blocks can also be code... the first character of the text will likely be lower case if it is displaying code
@@ -158,9 +159,11 @@ bookParts.forEach(
               type = TYPE_CODE.non_section_header
             } else if (part.rawTagName === 'pre') {
               type = TYPE_CODE.diagram
+              // Remove anchor tag
+              content = '\t\t\t' + content.split('</a>')[1]
             }
 
-            chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].content = part.innerText
+            chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].content = content
             chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].type_id = type
           }
           index++
