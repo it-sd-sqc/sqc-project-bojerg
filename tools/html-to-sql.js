@@ -143,8 +143,9 @@ bookParts.forEach(
 
             if (part.classList?.contains('letter')) {
               // letter blocks can also be code... the first character of the text will likely be lower case if it is displaying code
+              // I also included a case where there are less than three spaces inside the text. This should cover all but the edgiest of edge cases
               const first = part.innerText.trim().substring(0, 1)
-              if (upperLetters.indexOf(first) === -1) {
+              if (upperLetters.indexOf(first) === -1 || part.innerText.trim().split(' ').length < 3) {
                 type = TYPE_CODE.code
               } else {
                 type = TYPE_CODE.letter
