@@ -31,7 +31,15 @@ header {
   border-bottom: medium solid var(--debian-red);
 }
 
-h1 {
+section {
+  padding: 4px 6vw 2vh 6vw;
+}
+
+section > h2, h3, h4, h5, p, code, pre {
+  padding-bottom: 1vh;
+}
+
+h1, h2, h3, h4, h5 {
   text-align: center;
 }
 
@@ -73,6 +81,14 @@ h1, h2, h3, hr {
 
 .content-div {
   padding: 80px 10vw 0;
+}
+
+section > p {
+  text-indent: 18px;
+}
+
+section > .no-indent {
+  text-indent: 0;
 }
 
 .dark {
