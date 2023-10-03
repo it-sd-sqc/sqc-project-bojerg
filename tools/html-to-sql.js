@@ -45,7 +45,8 @@ INSERT INTO element_type (description)
          ('no_indent'),
          ('diagram'),
          ('code'), 
-         ('non_section_header');
+         ('non_section_header'),
+         ('image');
 
 INSERT INTO chapter (title) VALUES
 `
@@ -60,7 +61,8 @@ const TYPE_CODE = {
   no_indent: 4,
   diagram: 5,
   code: 6,
-  non_section_header: 7
+  non_section_header: 7,
+  image: 8
 }
 
 // Used to compare against first char of 'letter' element. If it is not an upper-case letter, it would be
@@ -93,7 +95,7 @@ bookParts.forEach(
         (image) => {
           const oldSrc = image.getAttribute('src')
           const oldSrcTokens = oldSrc.split('/')
-          const newSrc = `/images/book/${oldSrcTokens[oldSrcTokens.length - 1]}`
+          const newSrc = `/images/${oldSrcTokens[oldSrcTokens.length - 1]}`
           image.setAttribute('src', newSrc)
         }
       )
@@ -143,24 +145,32 @@ bookParts.forEach(
             let content = part.innerText
 
             if (part.classList?.contains('letter')) {
-              // letter blocks can also be code... the first character of the text will likely be lower case if it is displaying code
-              // I also included a case where there are less than three spaces inside the text. This should cover all but the edgiest of edge cases
-              const first = part.innerText.trim().substring(0, 1)
-              if (upperLetters.indexOf(first) === -1 || part.innerText.trim().split(' ').length < 3) {
-                type = TYPE_CODE.code
-              } else {
-                type = TYPE_CODE.letter
-              }
+                // letter blocks can also be code... the first character of the text will likely be lower case if it is displaying code
+                // I also included a case where there are less than three spaces inside the text. This should cover all but the edgiest of edge cases
+                const first = part.innerText.trim().substring(0, 1)
+                if (upperLetters.indexOf(first) === -1 || part.innerText.trim().split(' ').length < 3) {
+                    type = TYPE_CODE.code
+                } else {
+                    type = TYPE_CODE.letter
+                }
             } else if (part.classList?.contains('footnote')) {
-              type = TYPE_CODE.footnote
+                type = TYPE_CODE.footnote
             } else if (part.classList?.contains('noindent')) {
-              type = TYPE_CODE.no_indent
+                type = TYPE_CODE.no_indent
             } else if (part.rawTagName === 'h4') {
-              type = TYPE_CODE.non_section_header
+                type = TYPE_CODE.non_section_header
             } else if (part.rawTagName === 'pre') {
-              type = TYPE_CODE.diagram
-              // Remove anchor tag
-              content = '\t\t\t' + content.split('</a>')[1]
+                type = TYPE_CODE.diagram
+                // Remove anchor tag
+                content = '\t\t\t' + content.split('</a>')[1]
+            } else if (part.classList?.contains('fig')) {
+                type = TYPE_CODE.image
+                // Remove figure div and store the image attributes as content
+                const imgTagAttrs = part.querySelector('img').rawAttrs.split(' ')
+                const label = part.querySelector('p').innerText
+                // We customize the attributes to plug into an img tag on our view, then add the label so we can display it on our page too
+                content = 'alt="' + label + '" ' + imgTagAttrs[2] + ' ' + imgTagAttrs[3] + ' ' + imgTagAttrs[4] + 'SPLIT!' + label
+                console.log(content)
             }
 
             chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].content = content
