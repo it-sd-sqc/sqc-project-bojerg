@@ -172,7 +172,7 @@ Debian is a free operating system (OS) for your computer. An
 '),
 ('2', '1', '2', '
 '),
-('2', '1', '3', '
+('2', '3', '3', '
  [1]
 http://www.gnu.org/
 '),
@@ -217,7 +217,7 @@ http://www.gnu.org/
 '),
 ('2', '1', '12', '
 '),
-('2', '1', '13', '1.1.1 Who Creates Debian?'),
+('2', '7', '13', '1.1.1 Who Creates Debian?'),
 ('2', '1', '14', '
 '),
 ('2', '1', '15', '
@@ -252,7 +252,7 @@ http://www.gnu.org/
 '),
 ('3', '1', '4', '
 '),
-('3', '1', '5', '
+('3', '3', '5', '
  [2]
 A terminal is just a keyboard and a screen that are connected to the computer
 through the network, over a modem, or directly. You keyboard and monitor form a
@@ -295,25 +295,25 @@ often called the console.
 '),
 ('4', '1', '2', '
 '),
-('4', '1', '3', '
+('4', '3', '3', '
  [3]
 http://www.debian.org/social_contract#guidelines
 '),
 ('4', '1', '4', '
 '),
-('4', '1', '5', '
+('4', '3', '5', '
  [4]
 http://www.fsf.org/
 '),
 ('4', '1', '6', '
 '),
-('4', '1', '7', '
+('4', '3', '7', '
  [5]
 http://www.debian.org/
 '),
 ('4', '1', '8', '
 '),
-('4', '1', '9', '
+('4', '3', '9', '
  [6]
 http://www.fsf.org/philosophy/shouldbefree.html
 '),
@@ -335,7 +335,7 @@ http://www.fsf.org/philosophy/shouldbefree.html
 '),
 ('4', '1', '14', '
 '),
-('4', '1', '15', '
+('4', '3', '15', '
  [7]
 Note that the term “hacker” should not be confused with the term
 “cracker.” In short, a hacker is benevolent, whereas a cracker is
@@ -378,7 +378,7 @@ incorrectly use the term “hacker” instead of “cracker.”
 '),
 ('4', '1', '24', '
 '),
-('4', '1', '25', '
+('4', '3', '25', '
  [8]
 http://www.debian.org/social_contract
 '),
@@ -441,7 +441,7 @@ http://www.debian.org/social_contract
 '),
 ('5', '1', '8', '
 '),
-('5', '1', '9', '1.4.1 How to Read This Book'),
+('5', '7', '9', '1.4.1 How to Read This Book'),
 ('5', '1', '10', '
 '),
 ('5', '1', '11', '
@@ -470,14 +470,14 @@ http://www.debian.org/social_contract
 '),
 ('5', '1', '16', '
 '),
-('5', '1', '17', '
+('5', '2', '17', '
      Tip: If you ever mistakenly type a command or don’t know how to exit a
      program, press CTRL-c (the Ctrl key and the lowercase letter c pressed
      simultaneously). This will often stop the program.
 '),
 ('5', '1', '18', '
 '),
-('5', '1', '19', '1.4.2 Conventions'),
+('5', '7', '19', '1.4.2 Conventions'),
 ('5', '1', '20', '
 '),
 ('5', '1', '21', '
@@ -527,7 +527,7 @@ http://www.debian.org/social_contract
 '),
 ('6', '1', '0', '
 '),
-('6', '1', '1', '
+('6', '6', '1', '
      “A journey of a thousand miles must begin with a single step.”
      —Lao-Tsu
 '),
@@ -565,25 +565,25 @@ http://www.debian.org/social_contract
 '),
 ('7', '1', '6', '
 '),
-('7', '1', '7', '
+('7', '3', '7', '
  [1]
 http://www.debian.org/releases/slink/i386/ch-hardware-req.en.html
 '),
 ('7', '1', '8', '
 '),
-('7', '1', '9', '
+('7', '3', '9', '
  [2]
 http://metalab.unc.edu/LDP/HOWTO/Hardware-HOWTO.html
 '),
 ('7', '1', '10', '
 '),
-('7', '1', '11', '
+('7', '3', '11', '
  [3]
 http://www.xfree86.org/
 '),
 ('7', '1', '12', '
 '),
-('7', '1', '13', '2.1.1 Memory and Disk Space Requirements'),
+('7', '7', '13', '2.1.1 Memory and Disk Space Requirements'),
 ('7', '1', '14', '
 '),
 ('7', '1', '15', '
@@ -618,14 +618,14 @@ http://www.xfree86.org/
 '),
 ('8', '1', '4', '
 '),
-('8', '1', '5', '
+('8', '3', '5', '
  [4]
 A boot loader is responsible starting an operating system’s boot
 procedure.
 '),
 ('8', '1', '6', '
 '),
-('8', '1', '7', '2.2.1 Information You Will Need'),
+('8', '7', '7', '2.2.1 Information You Will Need'),
 ('8', '1', '8', '
 '),
 ('8', '1', '9', '
@@ -635,7 +635,7 @@ procedure.
 '),
 ('8', '1', '10', '
 '),
-('8', '1', '11', '
+('8', '4', '11', '
      ◼ Your host name (you may be able to decide this on your own)
 
      ◼ Your domain name
@@ -672,7 +672,7 @@ procedure.
 '),
 ('9', '1', '2', '
 '),
-('9', '1', '3', '
+('9', '7', '3', '
 2.3.1 Background
 '),
 ('9', '1', '4', '
@@ -741,7 +741,7 @@ procedure.
 '),
 ('9', '1', '14', '
 '),
-('9', '1', '15', '
+('9', '3', '15', '
  [5]
 See your hard drive manual for a description of these features.
 '),
@@ -767,7 +767,7 @@ See your hard drive manual for a description of these features.
 '),
 ('9', '1', '20', '
 '),
-('9', '1', '21', '
+('9', '7', '21', '
 2.3.2 Planning Use of the System
 '),
 ('9', '1', '22', '
@@ -841,7 +841,7 @@ Devel_comp.
 '),
 ('9', '1', '36', '
 '),
-('9', '1', '37', '
+('9', '7', '37', '
 2.3.3 PC Disk Limitations
 '),
 ('9', '1', '38', '
@@ -856,7 +856,7 @@ Devel_comp.
 '),
 ('9', '1', '40', '
 '),
-('9', '1', '41', '
+('9', '3', '41', '
  [6]
 http://metalab.unc.edu/LDP/HOWTO/mini/Partition.html
 '),
@@ -901,13 +901,13 @@ http://metalab.unc.edu/LDP/HOWTO/mini/Partition.html
 '),
 ('9', '1', '50', '
 '),
-('9', '1', '51', '
+('9', '3', '51', '
  [7]
 http://metalab.unc.edu/LDP/HOWTO/mini/Large-Disk.html
 '),
 ('9', '1', '52', '
 '),
-('9', '1', '53', '
+('9', '7', '53', '
 2.3.4 Device Names in Linux
 '),
 ('9', '1', '54', '
@@ -920,8 +920,7 @@ http://metalab.unc.edu/LDP/HOWTO/mini/Large-Disk.html
 '),
 ('9', '1', '56', '
 '),
-('9', '1', '57', '
-                         <a id="tabl01"></a>Table 2.1: Linux Device Names
+('9', '5', '57', '			Table 2.1: Linux Device Names
 +------------------------------------------------------------------------------+
 | Device                                        |          Linux Name          |
 |-----------------------------------------------+------------------------------|
@@ -989,7 +988,7 @@ http://metalab.unc.edu/LDP/HOWTO/mini/Large-Disk.html
 '),
 ('9', '1', '62', '
 '),
-('9', '1', '63', '
+('9', '7', '63', '
 2.3.5 Recommended Partitioning Scheme
 '),
 ('9', '1', '64', '
@@ -1022,7 +1021,7 @@ http://metalab.unc.edu/LDP/HOWTO/mini/Large-Disk.html
 '),
 ('9', '1', '70', '
 '),
-('9', '1', '71', '
+('9', '3', '71', '
  [8]
 http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
@@ -1047,7 +1046,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('9', '1', '76', '
 '),
-('9', '1', '77', '
+('9', '7', '77', '
 2.3.6 Partitioning Prior to Installation
 '),
 ('9', '1', '78', '
@@ -1070,7 +1069,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('9', '1', '82', '
 '),
-('9', '1', '83', '
+('9', '7', '83', '
   Partitioning from DOS or Windows
 '),
 ('9', '1', '84', '
@@ -1083,7 +1082,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('9', '1', '86', '
 '),
-('9', '1', '87', '
+('9', '7', '87', '
   Lossless Repartitioning
 '),
 ('9', '1', '88', '
@@ -1157,7 +1156,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('9', '1', '102', '
 '),
-('9', '1', '103', '
+('9', '7', '103', '
 2.3.7 Debian Installation Steps
 '),
 ('9', '1', '104', '
@@ -1168,7 +1167,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('9', '1', '106', '
 '),
-('9', '1', '107', '
+('9', '6', '107', '
     1. Boot the installation system
 
     2. Initial system configuration
@@ -1234,7 +1233,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('10', '1', '6', '
 '),
-('10', '1', '7', '
+('10', '7', '7', '
 2.4.1 Installing from a CD-ROM
 '),
 ('10', '1', '8', '
@@ -1255,7 +1254,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('10', '1', '12', '
 '),
-('10', '1', '13', '
+('10', '7', '13', '
 2.4.2 Booting from Floppies
 '),
 ('10', '1', '14', '
@@ -1269,7 +1268,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('10', '1', '16', '
 '),
-('10', '1', '17', '
+('10', '7', '17', '
   Creating Floppies from Disk Images
 '),
 ('10', '1', '18', '
@@ -1291,24 +1290,24 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('10', '1', '22', '
 '),
-('10', '1', '23', '
+('10', '6', '23', '
    C:\WINDOWS&gt;D:
 '),
 ('10', '1', '24', '
 '),
-('10', '1', '25', '
+('10', '4', '25', '
    Now, change to the directory containing the disk images.
 '),
 ('10', '1', '26', '
 '),
-('10', '1', '27', '
+('10', '2', '27', '
    D:\&gt;CD
 
    \DISTS\SLINK\MAIN\DISKS-I386\2.1.8-1999-02-22
 '),
 ('10', '1', '28', '
 '),
-('10', '1', '29', '
+('10', '4', '29', '
    If you get an error, double-check what you’re typing. If the error
    persists, manually issue CD \DISTS\SLINK\MAIN\DISKS-I386, then run DIR,
    and then CD into the directory indicated. Note that the above commands,
@@ -1323,7 +1322,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('10', '1', '32', '
 '),
-('10', '1', '33', '
+('10', '2', '33', '
    D:\DISTS\SLINK\MAIN\DISKS-I386\
 
    2.1.8-1999-02-22&gt;rawrite2
@@ -1334,39 +1333,39 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('10', '1', '34', '
 '),
-('10', '1', '35', '
+('10', '4', '35', '
    Rawrite2 starts and displays its welcome message. Next, it asks for the
    filename and diskette drive. You tell it to write resc1440.bin to a:
 '),
 ('10', '1', '36', '
 '),
-('10', '1', '37', '
+('10', '2', '37', '
    Enter disk image source file name: resc1440.bin
 
    Enter target diskette drive: a:
 '),
 ('10', '1', '38', '
 '),
-('10', '1', '39', '
+('10', '4', '39', '
    Rawrite2 now asks you to insert a disk into the floppy drive. Do so and
    press Enter.
 '),
 ('10', '1', '40', '
 '),
-('10', '1', '41', '
+('10', '2', '41', '
    Plese insert a formatted diskette into
 
    drive A: and press -ENTER- :
 '),
 ('10', '1', '42', '
 '),
-('10', '1', '43', '
+('10', '4', '43', '
    At this point, rawrite2 will create the first of the two disks. Now, you
    need to repeat the process for the second disk:
 '),
 ('10', '1', '44', '
 '),
-('10', '1', '45', '
+('10', '2', '45', '
    D:\DISTS\SLINK\MAIN\DISKS-I386\
 
    2.1.8-1999-02-22&gt;rawrite2
@@ -1385,12 +1384,12 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('10', '1', '46', '
 '),
-('10', '1', '47', '
+('10', '4', '47', '
    By now, your disks are created. You can now use the first one to boot.
 '),
 ('10', '1', '48', '
 '),
-('10', '1', '49', '
+('10', '7', '49', '
   Booting Debian
 '),
 ('10', '1', '50', '
@@ -1488,7 +1487,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('14', '1', '4', '
 '),
-('14', '1', '5', '
+('14', '3', '5', '
  [1]
 http://www.linuxjournal.com
 '),
@@ -1584,11 +1583,7 @@ http://www.linuxjournal.com
 '),
 ('17', '1', '12', '
 '),
-('17', '1', '13', '
-
-
-Figure 3.1: cfdisk screenshot
-'),
+('17', '8', '13', 'alt="Figure 3.1: cfdisk screenshot"" height="300" src="/images/img2.png" width="459"SPLIT!Figure 3.1: cfdisk screenshot'),
 ('17', '1', '14', '
 '),
 ('17', '1', '15', '
@@ -1668,7 +1663,7 @@ Figure 3.1: cfdisk screenshot
 '),
 ('19', '1', '4', '
 '),
-('19', '1', '5', '
+('19', '3', '5', '
  [2]
 http://www.debian.org/releases/slink/i386/release-notes/ch-upgrading-req.en.html
 '),
@@ -1706,7 +1701,7 @@ http://www.debian.org/releases/slink/i386/release-notes/ch-upgrading-req.en.html
 '),
 ('19', '1', '12', '
 '),
-('19', '1', '13', '
+('19', '7', '13', '
 3.7.1 Mount a Previously-Initialized Partition
 '),
 ('19', '1', '14', '
@@ -1766,7 +1761,7 @@ http://www.debian.org/releases/slink/i386/release-notes/ch-upgrading-req.en.html
 '),
 ('21', '1', '6', '
 '),
-('21', '1', '7', '
+('21', '3', '7', '
  [3]
 http://metalab.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html
 '),
@@ -1861,7 +1856,7 @@ http://metalab.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html
 '),
 ('24', '1', '4', '
 '),
-('24', '1', '5', '
+('24', '7', '5', '
 3.12.1 Configure the Base System
 '),
 ('24', '1', '6', '
@@ -1895,7 +1890,7 @@ http://metalab.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html
 '),
 ('24', '1', '12', '
 '),
-('24', '1', '13', '
+('24', '7', '13', '
 3.12.2 Make Linux Bootable Directly from the Hard Disk
 '),
 ('24', '1', '14', '
@@ -2096,7 +2091,7 @@ http://metalab.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html
 '),
 ('32', '1', '2', '
 '),
-('32', '1', '3', '
+('32', '7', '3', '
 3.20.1 Introduction
 '),
 ('32', '1', '4', '
@@ -2123,7 +2118,7 @@ http://metalab.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html
 '),
 ('32', '1', '10', '
 '),
-('32', '1', '11', '
+('32', '6', '11', '
     1. Choose the access method to use.
 
     2. Update list of available packages, if possible.
@@ -2138,7 +2133,7 @@ http://metalab.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html
 '),
 ('32', '1', '12', '
 '),
-('32', '1', '13', '
+('32', '4', '13', '
    As each step is completed successfully, dselect will lead you on to the
    next. Go through them in order without skipping any steps.
 '),
@@ -2154,7 +2149,7 @@ http://metalab.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html
 '),
 ('32', '1', '16', '
 '),
-('32', '1', '17', '
+('32', '7', '17', '
 3.20.2 Once dselect Is Launched
 '),
 ('32', '1', '18', '
@@ -2164,7 +2159,7 @@ http://metalab.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html
 '),
 ('32', '1', '20', '
 '),
-('32', '1', '21', '
+('32', '2', '21', '
    Debian Linux ‘dselect’ package handling frontend.
 
    0.  [A]ccess  Choose the access method to use.
@@ -2184,21 +2179,17 @@ http://metalab.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html
 '),
 ('32', '1', '22', '
 '),
-('32', '1', '23', '
+('32', '4', '23', '
    Let’s look at these one by one.
 '),
 ('32', '1', '24', '
 '),
-('32', '1', '25', '
+('32', '7', '25', '
 Access
 '),
 ('32', '1', '26', '
 '),
-('32', '1', '27', '
-
-
-Figure 3.2: dselect Access screen
-'),
+('32', '8', '27', 'alt="Figure 3.2: dselect Access screen"" height="301" src="/images/img3.png" width="460"SPLIT!Figure 3.2: dselect Access screen'),
 ('32', '1', '28', '
 '),
 ('32', '1', '29', '
@@ -2223,7 +2214,7 @@ multi_cd.
 '),
 ('32', '1', '32', '
 '),
-('32', '1', '33', '
+('32', '2', '33', '
    CD-ROM drive location
 
    Confirmation that you are using a multi-cd set
@@ -2244,7 +2235,7 @@ multi_cd.
 '),
 ('32', '1', '36', '
 '),
-('32', '1', '37', '
+('32', '6', '37', '
     1. Insert the CD in your CD-ROM drive.
 
     2. From the main dselect menu, select “Install.”
@@ -2306,14 +2297,14 @@ apt.
 '),
 ('32', '1', '50', '
 '),
-('32', '1', '51', '
+('32', '6', '51', '
    # export http_proxy=http://gateway:3128/
 
    # dselect
 '),
 ('32', '1', '52', '
 '),
-('32', '1', '53', '
+('32', '7', '53', '
   Update
 '),
 ('32', '1', '54', '
@@ -2325,7 +2316,7 @@ apt.
 '),
 ('32', '1', '56', '
 '),
-('32', '1', '57', '
+('32', '7', '57', '
   Select
 '),
 ('32', '1', '58', '
@@ -2356,7 +2347,7 @@ apt.
 '),
 ('32', '1', '66', '
 '),
-('32', '1', '67', '
+('32', '6', '67', '
      ◼ To exit the “Select” screen after all selections are complete, press
        Enter. This will return you to the main screen if there is no problem
        with your selection. Otherwise, you will be asked to deal with that
@@ -2377,8 +2368,7 @@ apt.
 '),
 ('32', '1', '70', '
 '),
-('32', '1', '71', '
-                        <a id="tabl02"></a>Table 3.1: Special dselect keys
+('32', '5', '71', '			Table 3.1: Special dselect keys
             +------------------------------------------------------+
             | Key  |                  Description                  |
             |------+-----------------------------------------------|
@@ -2405,8 +2395,7 @@ apt.
 '),
 ('32', '1', '74', '
 '),
-('32', '1', '75', '
-                       <a id="tabl03"></a>Table 3.2: dselect Package States
+('32', '5', '75', '			Table 3.2: dselect Package States
                +-----------------------------------------------+
                | Flag |     Meaning     |   Possible values    |
                |------+-----------------+----------------------|
@@ -2432,7 +2421,7 @@ apt.
 '),
 ('32', '1', '80', '
 '),
-('32', '1', '81', '
+('32', '2', '81', '
    EIOM Pri  Section  Package   Description
 
    ** Opt  misc     loadlin   a loader (running under DOS) for LINUX
@@ -2506,7 +2495,7 @@ apt.
 '),
 ('32', '1', '100', '
 '),
-('32', '1', '101', '
+('32', '6', '101', '
      ◼ libc6-pic
 
      ◼ slang1-pic
@@ -2529,13 +2518,13 @@ apt.
 '),
 ('32', '1', '102', '
 '),
-('32', '1', '103', '
+('32', '4', '103', '
    The person maintaining boot-floppies also thinks that the following
    packages should be installed. These are not, however, essential:
 '),
 ('32', '1', '104', '
 '),
-('32', '1', '105', '
+('32', '6', '105', '
      ◼ lynx
 
      ◼ debiandoc-sgml
@@ -2555,7 +2544,7 @@ apt.
 '),
 ('32', '1', '110', '
 '),
-('32', '1', '111', '
+('32', '2', '111', '
    EIOM Pri Section  Package      Description
 
    __ Opt admin    boot-floppie Scripts to create the Debian
@@ -2568,7 +2557,7 @@ apt.
 '),
 ('32', '1', '112', '
 '),
-('32', '1', '113', '
+('32', '4', '113', '
    If you decide now that you don’t want boot-floppies, just press Enter.
 '),
 ('32', '1', '114', '
@@ -2578,14 +2567,14 @@ apt.
 '),
 ('32', '1', '116', '
 '),
-('32', '1', '117', '
+('32', '2', '117', '
    EIOM Pri Section  Package      Description
 
    _* Opt admin    boot-floppie Scripts to create the Debian
 '),
 ('32', '1', '118', '
 '),
-('32', '1', '119', '
+('32', '6', '119', '
    __ Opt devel    newt0.25-dev Developer’s toolkit for newt
 
    __ Opt devel    slang1-dev   The S-Lang programming library
@@ -2594,12 +2583,12 @@ apt.
 '),
 ('32', '1', '120', '
 '),
-('32', '1', '121', '
+('32', '4', '121', '
    Pressing the U key restores dselect’s selections:
 '),
 ('32', '1', '122', '
 '),
-('32', '1', '123', '
+('32', '2', '123', '
            EIOM Pri Section  Package      Description
 
    _* Opt admin    boot-floppie Scripts to create the Debian installation
@@ -2649,8 +2638,7 @@ apt.
 '),
 ('32', '1', '134', '
 '),
-('32', '1', '135', '
-                  <a id="tabl04"></a>Table 3.3: Expected Package Category States
+('32', '5', '135', '			Table 3.3: Expected Package Category States
                     +--------------------------------------+
                     | Package category |      Status       |
                     |------------------+-------------------|
@@ -2673,7 +2661,7 @@ apt.
 '),
 ('32', '1', '138', '
 '),
-('32', '1', '139', '
+('32', '7', '139', '
   Install
 '),
 ('32', '1', '140', '
@@ -2703,7 +2691,7 @@ apt.
 '),
 ('32', '1', '146', '
 '),
-('32', '1', '147', '
+('32', '7', '147', '
   Configure
 '),
 ('32', '1', '148', '
@@ -2714,7 +2702,7 @@ apt.
 '),
 ('32', '1', '150', '
 '),
-('32', '1', '151', '
+('32', '7', '151', '
   Remove
 '),
 ('32', '1', '152', '
@@ -2724,7 +2712,7 @@ apt.
 '),
 ('32', '1', '154', '
 '),
-('32', '1', '155', '
+('32', '7', '155', '
   Quit
 '),
 ('32', '1', '156', '
@@ -2736,7 +2724,7 @@ apt.
 '),
 ('32', '1', '158', '
 '),
-('32', '1', '159', '
+('32', '7', '159', '
 3.20.3 A Few Hints in Conclusion
 '),
 ('32', '1', '160', '
@@ -2790,7 +2778,7 @@ Package names.
 '),
 ('33', '1', '6', '
 '),
-('33', '1', '7', '
+('33', '6', '7', '
      ◼ efax_08a-1.deb
 
      ◼ lrzsz_0.12b-1.deb
@@ -3035,11 +3023,7 @@ Package names.
 '),
 ('37', '1', '16', '
 '),
-('37', '1', '17', '
-
-
-Figure 4.1: Sample session with su
-'),
+('37', '8', '17', 'alt="Figure 4.1: Sample session with su"" height="150" src="/images/img4.png" width="390"SPLIT!Figure 4.1: Sample session with su'),
 ('37', '1', '18', '
 '),
 ('37', '1', '19', '
@@ -3254,7 +3238,7 @@ Do not just turn off the computer! You risk losing valuable data!
 '),
 ('41', '1', '20', '
 '),
-('41', '1', '21', '
+('41', '7', '21', '
 5.1.1 Describing the Command Line
 '),
 ('41', '1', '22', '
@@ -3288,7 +3272,7 @@ Do not just turn off the computer! You risk losing valuable data!
 '),
 ('41', '1', '30', '
 '),
-('41', '1', '31', '
+('41', '6', '31', '
    man [-c|-w|-tZT device] [-adhu7V]
 
    [-m system[,...]] [-L locale] [-p string]
@@ -3376,7 +3360,7 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '10', '
 '),
-('42', '1', '11', '
+('42', '6', '11', '
      ◼ Filenames are case-sensitive. That is, MYFILE and MyFile are
      different files.
 
@@ -3447,7 +3431,7 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '14', '
 '),
-('42', '1', '15', '
+('42', '7', '15', '
 5.2.1 Using Files: A Tutorial
 '),
 ('42', '1', '16', '
@@ -3467,7 +3451,7 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '20', '
 '),
-('42', '1', '21', '
+('42', '6', '21', '
    pwd
 '),
 ('42', '1', '22', '
@@ -3480,7 +3464,7 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '24', '
 '),
-('42', '1', '25', '
+('42', '6', '25', '
    ls
 '),
 ('42', '1', '26', '
@@ -3494,7 +3478,7 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '28', '
 '),
-('42', '1', '29', '
+('42', '6', '29', '
    cd /
 '),
 ('42', '1', '30', '
@@ -3505,7 +3489,7 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '32', '
 '),
-('42', '1', '33', '
+('42', '6', '33', '
    pwd
 '),
 ('42', '1', '34', '
@@ -3515,7 +3499,7 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '36', '
 '),
-('42', '1', '37', '
+('42', '6', '37', '
    ls
 '),
 ('42', '1', '38', '
@@ -3525,7 +3509,7 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '40', '
 '),
-('42', '1', '41', '
+('42', '6', '41', '
    cd
 '),
 ('42', '1', '42', '
@@ -3581,44 +3565,44 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '54', '
 '),
-('42', '1', '55', '
+('42', '6', '55', '
    mkdir practice
 '),
 ('42', '1', '56', '
 '),
-('42', '1', '57', '
+('42', '4', '57', '
    In your home directory, make a directory called practice. You’ll use this
    directory to try out some other commands. You might type ls to verify that
    your new directory exists.
 '),
 ('42', '1', '58', '
 '),
-('42', '1', '59', '
+('42', '6', '59', '
    cd practice
 '),
 ('42', '1', '60', '
 '),
-('42', '1', '61', '
+('42', '4', '61', '
    Changes the directory to practice.
 '),
 ('42', '1', '62', '
 '),
-('42', '1', '63', '
+('42', '6', '63', '
    mkdir mysubdirectory
 '),
 ('42', '1', '64', '
 '),
-('42', '1', '65', '
+('42', '4', '65', '
    Creates a subdirectory of practice.
 '),
 ('42', '1', '66', '
 '),
-('42', '1', '67', '
+('42', '6', '67', '
    cp /etc/profile .
 '),
 ('42', '1', '68', '
 '),
-('42', '1', '69', '
+('42', '4', '69', '
    cp is short for “copy.” /etc/profile is just a random file on your
    system, don’t worry about what it is for now. We’ve copied it to . (recall
    that . just means “the directory I’m in now,” or the current working
@@ -3629,12 +3613,12 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '70', '
 '),
-('42', '1', '71', '
+('42', '6', '71', '
    more profile
 '),
 ('42', '1', '72', '
 '),
-('42', '1', '73', '
+('42', '4', '73', '
    This lets you view the contents of the file profile. more is used to view
    the contents of text files. It’s called more because it shows one
    screenful of the file at a time, and you press the space bar to see more.
@@ -3643,63 +3627,63 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '74', '
 '),
-('42', '1', '75', '
+('42', '6', '75', '
    more /etc/profile
 '),
 ('42', '1', '76', '
 '),
-('42', '1', '77', '
+('42', '4', '77', '
    Verifies that the original looks just like the copy you made.
 '),
 ('42', '1', '78', '
 '),
-('42', '1', '79', '
+('42', '6', '79', '
    mv profile mysubdirectory
 '),
 ('42', '1', '80', '
 '),
-('42', '1', '81', '
+('42', '4', '81', '
    mv stands for “move.” You’ve moved the file profile from the current
    directory into the subdirectory you created earlier.
 '),
 ('42', '1', '82', '
 '),
-('42', '1', '83', '
+('42', '6', '83', '
    ls
 '),
 ('42', '1', '84', '
 '),
-('42', '1', '85', '
+('42', '4', '85', '
    Verifies that profile is no longer in the current directory.
 '),
 ('42', '1', '86', '
 '),
-('42', '1', '87', '
+('42', '6', '87', '
    ls mysubdirectory
 '),
 ('42', '1', '88', '
 '),
-('42', '1', '89', '
+('42', '4', '89', '
    Verifies that profile has moved to mysubdirectory.
 '),
 ('42', '1', '90', '
 '),
-('42', '1', '91', '
+('42', '6', '91', '
    cd mysubdirectory
 '),
 ('42', '1', '92', '
 '),
-('42', '1', '93', '
+('42', '4', '93', '
    Changes to the subdirectory.
 '),
 ('42', '1', '94', '
 '),
-('42', '1', '95', '
+('42', '6', '95', '
    mv profile myprofile
 '),
 ('42', '1', '96', '
 '),
-('42', '1', '97', '
+('42', '4', '97', '
    Note that unlike some operating systems, there is no difference between
    moving a file and renaming it. Thus there’s no separate rename command.
    Note that the second argument to mv can be a directory to move the file or
@@ -3712,35 +3696,35 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '100', '
 '),
-('42', '1', '101', '
+('42', '6', '101', '
    mv myprofile ..
 '),
 ('42', '1', '102', '
 '),
-('42', '1', '103', '
+('42', '4', '103', '
    Just as . means “the directory I’m in now,” .. means “parent of the
    current directory,” in this case the practice directory you created
    earlier. Use ls to verify that that’s where myprofile is now.
 '),
 ('42', '1', '104', '
 '),
-('42', '1', '105', '
+('42', '6', '105', '
    cd ..
 '),
 ('42', '1', '106', '
 '),
-('42', '1', '107', '
+('42', '4', '107', '
    Changes directories to the parent directory—in this case practice, where
    you just put myprofile.
 '),
 ('42', '1', '108', '
 '),
-('42', '1', '109', '
+('42', '6', '109', '
    rm myprofile
 '),
 ('42', '1', '110', '
 '),
-('42', '1', '111', '
+('42', '4', '111', '
    rm means “remove,” so this deletes myprofile. Be careful!
    Deleting a file on a GNU/Linux system is permanent—there is no
    undelete. If you rm it, it’s gone, forever. Be careful! To
@@ -3750,12 +3734,12 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '112', '
 '),
-('42', '1', '113', '
+('42', '6', '113', '
    rmdir mysubdirectory
 '),
 ('42', '1', '114', '
 '),
-('42', '1', '115', '
+('42', '4', '115', '
    rmdir is just like rm, only it’s for directories. Notice that rmdir only
    works on empty directories. If the directory contains files, you must
    delete those files first, or alternatively you can use rm -r in place of
@@ -3763,23 +3747,23 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '116', '
 '),
-('42', '1', '117', '
+('42', '6', '117', '
    cd ..
 '),
 ('42', '1', '118', '
 '),
-('42', '1', '119', '
+('42', '4', '119', '
    This moves out of the current directory, and into its parent directory.
    Now you can type the following:
 '),
 ('42', '1', '120', '
 '),
-('42', '1', '121', '
+('42', '6', '121', '
    rmdir practice
 '),
 ('42', '1', '122', '
 '),
-('42', '1', '123', '
+('42', '4', '123', '
    This will delete the last remnants of your practice session.
 '),
 ('42', '1', '124', '
@@ -3793,7 +3777,7 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '126', '
 '),
-('42', '1', '127', '
+('42', '7', '127', '
 5.2.2 Dot Files and ls -a
 '),
 ('42', '1', '128', '
@@ -3991,7 +3975,7 @@ Files are a facility for storing and organizing information,
 '),
 ('45', '1', '8', '
 '),
-('45', '1', '9', '
+('45', '2', '9', '
    NAME cp - copy files SYNOPSIS cp [options] source
 
    --More--
@@ -4023,57 +4007,57 @@ Files are a facility for storing and organizing information,
 '),
 ('45', '1', '16', '
 '),
-('45', '1', '17', '
+('45', '6', '17', '
    man ls
 '),
 ('45', '1', '18', '
 '),
-('45', '1', '19', '
+('45', '4', '19', '
    Starts a new job.
 '),
 ('45', '1', '20', '
 '),
-('45', '1', '21', '
+('45', '6', '21', '
    Ctrl-z
 '),
 ('45', '1', '22', '
 '),
-('45', '1', '23', '
+('45', '4', '23', '
    Suspends the man ls job; you should see its job information.
 '),
 ('45', '1', '24', '
 '),
-('45', '1', '25', '
+('45', '6', '25', '
    man mv
 '),
 ('45', '1', '26', '
 '),
-('45', '1', '27', '
+('45', '4', '27', '
    Starts yet another job.
 '),
 ('45', '1', '28', '
 '),
-('45', '1', '29', '
+('45', '6', '29', '
    Ctrl-z
 '),
 ('45', '1', '30', '
 '),
-('45', '1', '31', '
+('45', '4', '31', '
    Suspends it.
 '),
 ('45', '1', '32', '
 '),
-('45', '1', '33', '
+('45', '6', '33', '
    jobs
 '),
 ('45', '1', '34', '
 '),
-('45', '1', '35', '
+('45', '4', '35', '
    Asks bash for a display of current jobs. The result looks like this:
 '),
 ('45', '1', '36', '
 '),
-('45', '1', '37', '
+('45', '6', '37', '
    {$} jobs
 
    [1] Stopped man cp
@@ -4086,67 +4070,67 @@ Files are a facility for storing and organizing information,
 '),
 ('45', '1', '38', '
 '),
-('45', '1', '39', '
+('45', '4', '39', '
    Notice the - and +, denoting respectively the next to last and last
    foreground jobs.
 '),
 ('45', '1', '40', '
 '),
-('45', '1', '41', '
+('45', '6', '41', '
    fg
 '),
 ('45', '1', '42', '
 '),
-('45', '1', '43', '
+('45', '4', '43', '
    Places the last foreground job (man mv, the one with the +) in the
    foreground again. If you press the space bar, the man page will continue
    scrolling.
 '),
 ('45', '1', '44', '
 '),
-('45', '1', '45', '
+('45', '6', '45', '
    Ctrl-z
 '),
 ('45', '1', '46', '
 '),
-('45', '1', '47', '
+('45', '4', '47', '
    Re-suspends man mv.
 '),
 ('45', '1', '48', '
 '),
-('45', '1', '49', '
+('45', '6', '49', '
    fg %1
 '),
 ('45', '1', '50', '
 '),
-('45', '1', '51', '
+('45', '4', '51', '
    You can refer to any job by placing a % in front of its number. If you use
    fg without specifying a job, the last active one is assumed.
 '),
 ('45', '1', '52', '
 '),
-('45', '1', '53', '
+('45', '6', '53', '
    Ctrl-z
 '),
 ('45', '1', '54', '
 '),
-('45', '1', '55', '
+('45', '4', '55', '
    Re-suspends man cp.
 '),
 ('45', '1', '56', '
 '),
-('45', '1', '57', '
+('45', '6', '57', '
    kill %1
 '),
 ('45', '1', '58', '
 '),
-('45', '1', '59', '
+('45', '4', '59', '
    Kills off job 1. bash will report the job information, which will look
    like this:
 '),
 ('45', '1', '60', '
 '),
-('45', '1', '61', '
+('45', '6', '61', '
    $ kill %1
 
    [1]- Terminated man cp
@@ -4155,21 +4139,21 @@ Files are a facility for storing and organizing information,
 '),
 ('45', '1', '62', '
 '),
-('45', '1', '63', '
+('45', '4', '63', '
    bash is only asking the job to quit, and sometimes a job will not want to
    do so. If the job doesn’t terminate, you can add the -KILL[1]
    option to kill to stop asking and start demanding. For example:
 '),
 ('45', '1', '64', '
 '),
-('45', '1', '65', '
+('45', '3', '65', '
  [1]
 Many people use the signal number -9 instead of the signal name -KILL. However,
 it’s technically more portable to use the signal name.
 '),
 ('45', '1', '66', '
 '),
-('45', '1', '67', '
+('45', '6', '67', '
    $ kill -KILL %1
 
    [1]- Killed man mv
@@ -4178,7 +4162,7 @@ it’s technically more portable to use the signal name.
 '),
 ('45', '1', '68', '
 '),
-('45', '1', '69', '
+('45', '4', '69', '
    The -KILL option forcibly and unconditionally kills off the job.
 '),
 ('45', '1', '70', '
@@ -4193,12 +4177,12 @@ it’s technically more portable to use the signal name.
 '),
 ('45', '1', '72', '
 '),
-('45', '1', '73', '
+('45', '6', '73', '
    top
 '),
 ('45', '1', '74', '
 '),
-('45', '1', '75', '
+('45', '4', '75', '
    This brings the top display back up. Give the u command in top to see only
    your processes. Look in the right-hand column for the man ls and man mv
    commands. man cp won’t be there because you killed it. top is showing you
@@ -4247,7 +4231,7 @@ it’s technically more portable to use the signal name.
 '),
 ('46', '1', '2', '
 '),
-('46', '1', '3', '
+('46', '7', '3', '
 5.6.1 Tab Completion
 '),
 ('46', '1', '4', '
@@ -4314,11 +4298,7 @@ it’s technically more portable to use the signal name.
 '),
 ('49', '1', '4', '
 '),
-('49', '1', '5', '
-
-
-Figure 6.1: Sample printenv output
-'),
+('49', '8', '5', 'alt="Figure 6.1: Sample printenv output"" height="357" src="/images/img5.png" width="333"SPLIT!Figure 6.1: Sample printenv output'),
 ('49', '1', '6', '
 '),
 ('49', '1', '7', '
@@ -4335,12 +4315,12 @@ Figure 6.1: Sample printenv output
 '),
 ('49', '1', '10', '
 '),
-('49', '1', '11', '
+('49', '6', '11', '
    man less
 '),
 ('49', '1', '12', '
 '),
-('49', '1', '13', '
+('49', '4', '13', '
    This command lets you view the online manual for the less command. In
    order to show you the text one screenful at a time, man invokes a pager
    that shows you a new page of text each time you press the space bar. By
@@ -4355,12 +4335,12 @@ Figure 6.1: Sample printenv output
 '),
 ('49', '1', '16', '
 '),
-('49', '1', '17', '
+('49', '6', '17', '
    export PAGER=less
 '),
 ('49', '1', '18', '
 '),
-('49', '1', '19', '
+('49', '4', '19', '
    After reading about the advantages of less, you might want to use it to
    read man pages. To do this, you set the environment variable PAGER.
 '),
@@ -4372,31 +4352,27 @@ Figure 6.1: Sample printenv output
 '),
 ('49', '1', '22', '
 '),
-('49', '1', '23', '
-
-
-Figure 6.2: Changing the prompt
-'),
+('49', '8', '23', 'alt="Figure 6.2: Changing the prompt"" height="108" src="/images/img6.png" width="234"SPLIT!Figure 6.2: Changing the prompt'),
 ('49', '1', '24', '
 '),
-('49', '1', '25', '
+('49', '6', '25', '
    export NAME=value
 '),
 ('49', '1', '26', '
 '),
-('49', '1', '27', '
+('49', '4', '27', '
    export means to move the variable from the shell into the environment.
    This means that programs other than the shell (for instance, a file
    viewer) will be able to access it.
 '),
 ('49', '1', '28', '
 '),
-('49', '1', '29', '
+('49', '6', '29', '
    echo $PAGER
 '),
 ('49', '1', '30', '
 '),
-('49', '1', '31', '
+('49', '4', '31', '
    This is the easiest way to see the value of a variable. $PAGER tells the
    shell to insert the value of the PAGER variable before invoking the
    command. echo echoes back its argument: in this case, it echoes the current
@@ -4404,12 +4380,12 @@ Figure 6.2: Changing the prompt
 '),
 ('49', '1', '32', '
 '),
-('49', '1', '33', '
+('49', '6', '33', '
    man more
 '),
 ('49', '1', '34', '
 '),
-('49', '1', '35', '
+('49', '4', '35', '
    Displays the more manual. This time, man should have invoked the less
    pager.
 '),
@@ -4429,34 +4405,34 @@ Figure 6.2: Changing the prompt
 '),
 ('49', '1', '40', '
 '),
-('49', '1', '41', '
+('49', '6', '41', '
    unset PAGER
 '),
 ('49', '1', '42', '
 '),
-('49', '1', '43', '
+('49', '4', '43', '
    If you don’t want to specify a pager anymore, you can unset the variable.
    man will then use more by default, just as it did before you set the
    variable.
 '),
 ('49', '1', '44', '
 '),
-('49', '1', '45', '
+('49', '6', '45', '
    echo $PAGER
 '),
 ('49', '1', '46', '
 '),
-('49', '1', '47', '
+('49', '4', '47', '
    Because PAGER has been unset, echo won’t print anything.
 '),
 ('49', '1', '48', '
 '),
-('49', '1', '49', '
+('49', '6', '49', '
    PS1=hello:
 '),
 ('49', '1', '50', '
 '),
-('49', '1', '51', '
+('49', '4', '51', '
    Just for fun, change your shell prompt. $ should now change; see Figure
    6.2 for details.
 '),
@@ -4494,7 +4470,7 @@ Figure 6.2: Changing the prompt
 '),
 ('50', '1', '4', '
 '),
-('50', '1', '5', '
+('50', '6', '5', '
    /usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games
 '),
 ('50', '1', '6', '
@@ -4521,14 +4497,14 @@ Figure 6.2: Changing the prompt
 '),
 ('50', '1', '12', '
 '),
-('50', '1', '13', '
+('50', '6', '13', '
    $ type type
 
    type is a shell builtin
 '),
 ('50', '1', '14', '
 '),
-('50', '1', '15', '
+('50', '4', '15', '
    type isn’t actually a program; it’s a function provided by the shell.
    However, you use it just like an external program.
 '),
@@ -4555,7 +4531,7 @@ Figure 6.2: Changing the prompt
 '),
 ('51', '1', '2', '
 '),
-('51', '1', '3', '
+('51', '7', '3', '
 6.3.1 System-Wide Versus User-Specific
 Configuration
 '),
@@ -4599,23 +4575,19 @@ User configuration affects only a single user. Dotfiles are used for
 '),
 ('52', '1', '4', '
 '),
-('52', '1', '5', '
+('52', '6', '5', '
    alias myls=’ls -almost-all -color=auto’
 '),
 ('52', '1', '6', '
 '),
-('52', '1', '7', '
+('52', '4', '7', '
    Now you can type myls instead of the full command. To see what myls really
    is, run the command type myls. To see a list of aliases you’ve defined,
    simply type alias on a line by itself.
 '),
 ('52', '1', '8', '
 '),
-('52', '1', '9', '
-
-
-Figure 6.3: Redirecting output
-'),
+('52', '8', '9', 'alt="Figure 6.3: Redirecting output"" height="71" src="/images/img7.png" width="176"SPLIT!Figure 6.3: Redirecting output'),
 ('53', '1', '0', '
 '),
 ('53', '1', '1', '
@@ -4626,7 +4598,7 @@ Figure 6.3: Redirecting output
 '),
 ('53', '1', '2', '
 '),
-('53', '1', '3', '
+('53', '7', '3', '
 6.5.1 stdin, stdout, Pipelines, and Redirection
 '),
 ('53', '1', '4', '
@@ -4663,12 +4635,12 @@ Figure 6.3: Redirecting output
 '),
 ('53', '1', '12', '
 '),
-('53', '1', '13', '
+('53', '6', '13', '
    echo Hello &gt; myfile
 '),
 ('53', '1', '14', '
 '),
-('53', '1', '15', '
+('53', '4', '15', '
    Use cat or your text file pager (more or less) to view myfile’s contents;
    see Figure 6.3.
 '),
@@ -4698,7 +4670,7 @@ Figure 6.3: Redirecting output
 '),
 ('53', '1', '22', '
 '),
-('53', '1', '23', '
+('53', '3', '23', '
  [1]
 Depending on your keyboard, this may either appear as a vertical bar or a
 broken vertical bar, but it can almost always be found above the backslash (\).
@@ -4711,23 +4683,23 @@ broken vertical bar, but it can almost always be found above the backslash (\).
 '),
 ('53', '1', '26', '
 '),
-('53', '1', '27', '
+('53', '6', '27', '
    tac /usr/doc/copyright/GPL
 '),
 ('53', '1', '28', '
 '),
-('53', '1', '29', '
+('53', '4', '29', '
    Unfortunately, it goes by too quickly to read. So you only get to see a
    couple of paragraphs. The solution is a pipeline:
 '),
 ('53', '1', '30', '
 '),
-('53', '1', '31', '
+('53', '6', '31', '
    tac /usr/doc/copyright/GPL | less
 '),
 ('53', '1', '32', '
 '),
-('53', '1', '33', '
+('53', '4', '33', '
    This takes the standard output of tac, which is the GPL in reverse, and
    sends it to the standard input of less.
 '),
@@ -4740,18 +4712,18 @@ broken vertical bar, but it can almost always be found above the backslash (\).
 '),
 ('53', '1', '36', '
 '),
-('53', '1', '37', '
+('53', '6', '37', '
    tac /usr/doc/copyright/GPL | tr G Q | less
 '),
 ('53', '1', '38', '
 '),
-('53', '1', '39', '
+('53', '4', '39', '
    You could get the same effect using temporary files and redirection, for
    example:
 '),
 ('53', '1', '40', '
 '),
-('53', '1', '41', '
+('53', '6', '41', '
    tac /usr/doc/copyright/GPL &gt; tmpfile
 
            tr G Q &lt; tmpfile &gt; tmpfile2
@@ -4762,7 +4734,7 @@ broken vertical bar, but it can almost always be found above the backslash (\).
 '),
 ('53', '1', '42', '
 '),
-('53', '1', '43', '
+('53', '4', '43', '
    Clearly a pipeline is more convenient.
 '),
 ('54', '1', '0', '
@@ -4776,7 +4748,7 @@ broken vertical bar, but it can almost always be found above the backslash (\).
 '),
 ('54', '1', '2', '
 '),
-('54', '1', '3', '
+('54', '3', '3', '
  [2]
 Actually, files beginning with . are not included in the expansion of *.
 '),
@@ -4797,7 +4769,7 @@ Actually, files beginning with . are not included in the expansion of *.
 '),
 ('54', '1', '8', '
 '),
-('54', '1', '9', '
+('54', '6', '9', '
    ls /etc/rc0.d /etc/rc1.d /etc/rc2.d /etc/rc3.d
 
    ls /etc/rc4.d /etc/rc5.d /etc/rc6.d /etc/rcS.d
@@ -4809,12 +4781,12 @@ Actually, files beginning with . are not included in the expansion of *.
 '),
 ('54', '1', '12', '
 '),
-('54', '1', '13', '
+('54', '6', '13', '
    ls /etc/rc?.d
 '),
 ('54', '1', '14', '
 '),
-('54', '1', '15', '
+('54', '4', '15', '
    /etc/rc?.d expands to a list of filenames that begin with rc, followed by
    any single character, followed by .d.
 '),
@@ -4894,22 +4866,22 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '2', '
 '),
-('56', '1', '3', '
+('56', '6', '3', '
    whoami
 '),
 ('56', '1', '4', '
 '),
-('56', '1', '5', '
+('56', '4', '5', '
    This verifies that you are not root. Then enter the following command:
 '),
 ('56', '1', '6', '
 '),
-('56', '1', '7', '
+('56', '6', '7', '
    rm /etc/resolv.conf
 '),
 ('56', '1', '8', '
 '),
-('56', '1', '9', '
+('56', '4', '9', '
    You should be told Permission denied. /etc/resolv.conf is an essential
    system configuration file; you aren’t allowed to change or remove it
    unless you’re root. This keeps you from accidentally messing up the
@@ -4928,12 +4900,12 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '14', '
 '),
-('56', '1', '15', '
+('56', '6', '15', '
    -rw-r-r- 1 root root 119 Feb 23 1997 /etc/resolv.conf
 '),
 ('56', '1', '16', '
 '),
-('56', '1', '17', '
+('56', '4', '17', '
    The -l option to ls requests all that additional information. The info on
    the right is easy: The size of the file is 119 bytes; the date the file
    was last changed is February 23, 1997; and the file’s name is
@@ -4955,7 +4927,7 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '22', '
 '),
-('56', '1', '23', '
+('56', '7', '23', '
 7.1.1 File Ownership
 '),
 ('56', '1', '24', '
@@ -4987,7 +4959,7 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '30', '
 '),
-('56', '1', '31', '
+('56', '6', '31', '
    $ groups
 
    system-wide configuration!permissions!file
@@ -4996,19 +4968,19 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '32', '
 '),
-('56', '1', '33', '
+('56', '4', '33', '
    It’s likely that you’re a member of only one group, which is identical to
    your username. However, root can add you to other groups. The above
    example shows a person that is a member of five groups.
 '),
 ('56', '1', '34', '
 '),
-('56', '1', '35', '
+('56', '6', '35', '
    less /etc/group
 '),
 ('56', '1', '36', '
 '),
-('56', '1', '37', '
+('56', '4', '37', '
    This file lists the groups that exist on your system. Notice the root
    group (the only member of this group is the root user), and the group that
    corresponds to your username. There are also groups like dialout (users
@@ -5019,24 +4991,24 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '38', '
 '),
-('56', '1', '39', '
+('56', '6', '39', '
    ls -l /home
 '),
 ('56', '1', '40', '
 '),
-('56', '1', '41', '
+('56', '4', '41', '
    This command shows you that every user’s directory is owned by that user
    and that user’s personal group.
 '),
 ('56', '1', '42', '
 '),
-('56', '1', '43', '
+('56', '2', '43', '
      Tip: If you just installed Debian, you may be the only user. You can use
      the adduser command to add more users to the system.
 '),
 ('56', '1', '44', '
 '),
-('56', '1', '45', '
+('56', '7', '45', '
 7.1.2 Mode
 '),
 ('56', '1', '46', '
@@ -5082,8 +5054,7 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '56', '
 '),
-('56', '1', '57', '
-<a id="tabl05"></a>Table 7.1: Permissions in Linux
+('56', '5', '57', '			Table 7.1: Permissions in Linux
 +------------------------------------------------------------------------------+
 | Code |  Name   | Allows for Files         | Allows for Directories           |
 |------+---------+--------------------------+----------------------------------|
@@ -5108,12 +5079,12 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '62', '
 '),
-('56', '1', '63', '
+('56', '6', '63', '
    r-
 '),
 ('56', '1', '64', '
 '),
-('56', '1', '65', '
+('56', '4', '65', '
    The user, group, or other with these permissions may list the contents of
    the directory, but can do nothing else. The files in the directory can’t
    be read, changed, deleted, or manipulated in any way. The only permitted
@@ -5122,23 +5093,23 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '66', '
 '),
-('56', '1', '67', '
+('56', '6', '67', '
    rw-
 '),
 ('56', '1', '68', '
 '),
-('56', '1', '69', '
+('56', '4', '69', '
    Write permission has no effect in the absence of execute permission, so
    this mode behaves just like the above mode.
 '),
 ('56', '1', '70', '
 '),
-('56', '1', '71', '
+('56', '6', '71', '
    r-x
 '),
 ('56', '1', '72', '
 '),
-('56', '1', '73', '
+('56', '4', '73', '
    This mode permits the files in a directory to be listed and permits access
    to those files. However, files can’t be created or deleted. Access means
    that you can view, change, or execute the files as permitted by the files’
@@ -5146,12 +5117,12 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '74', '
 '),
-('56', '1', '75', '
+('56', '6', '75', '
    -x
 '),
 ('56', '1', '76', '
 '),
-('56', '1', '77', '
+('56', '4', '77', '
    Files in this directory can be accessed, but the contents of the directory
    can’t be listed, so you have to know what filename you’re looking for in
    advance (unless you’re exceptionally good at guessing). Files can’t be
@@ -5159,12 +5130,12 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '78', '
 '),
-('56', '1', '79', '
+('56', '6', '79', '
    rwx
 '),
 ('56', '1', '80', '
 '),
-('56', '1', '81', '
+('56', '4', '81', '
    You can do anything you want with the files in this directory, as long as
    it’s permitted by the permissions on the files themselves.
 '),
@@ -5193,7 +5164,7 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '88', '
 '),
-('56', '1', '89', '
+('56', '7', '89', '
 7.1.3 Permissions in Practice
 '),
 ('56', '1', '90', '
@@ -5204,18 +5175,18 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '92', '
 '),
-('56', '1', '93', '
+('56', '6', '93', '
    cd; touch myfile
 '),
 ('56', '1', '94', '
 '),
-('56', '1', '95', '
+('56', '4', '95', '
    There are a couple of new tricks here. First, you can use ; to put two
    commands on one line. You can type the above as:
 '),
 ('56', '1', '96', '
 '),
-('56', '1', '97', '
+('56', '6', '97', '
    $ cd
 
    $ touch myfile
@@ -5227,12 +5198,12 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '100', '
 '),
-('56', '1', '101', '
+('56', '6', '101', '
    $ cd; touch myfile
 '),
 ('56', '1', '102', '
 '),
-('56', '1', '103', '
+('56', '4', '103', '
    Either way the same thing will end up happening.
 '),
 ('56', '1', '104', '
@@ -5247,13 +5218,13 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '106', '
 '),
-('56', '1', '107', '
+('56', '6', '107', '
    $ ls -l
 
 '),
 ('56', '1', '108', '
 '),
-('56', '1', '109', '
+('56', '4', '109', '
    -rw-r-r- 1 user user 0 Nov 18 22:04 myfile
 '),
 ('56', '1', '110', '
@@ -5265,35 +5236,35 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '112', '
 '),
-('56', '1', '113', '
+('56', '6', '113', '
    chmod u+x myfile
 '),
 ('56', '1', '114', '
 '),
-('56', '1', '115', '
+('56', '4', '115', '
    This command means to add (+) execute (x) permissions for the user (u) who
    owns the file. Use ls -l to see the effects.
 '),
 ('56', '1', '116', '
 '),
-('56', '1', '117', '
+('56', '6', '117', '
    chmod go-r myfile
 '),
 ('56', '1', '118', '
 '),
-('56', '1', '119', '
+('56', '4', '119', '
    Here you’ve subtracted (-) read permission (r) from the group (g) owning
    the file and from everyone else (others, o). Again, use ls -l to verify
    the effects.
 '),
 ('56', '1', '120', '
 '),
-('56', '1', '121', '
+('56', '6', '121', '
    chmod ugo=rx myfile
 '),
 ('56', '1', '122', '
 '),
-('56', '1', '123', '
+('56', '4', '123', '
    Here you’ve set (=) user, group, and other permissions to read and
    execute. This sets permissions to exactly what you’ve specified
    and unsets any other permissions. So all rx should be set, and all w should
@@ -5301,35 +5272,35 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('56', '1', '124', '
 '),
-('56', '1', '125', '
+('56', '6', '125', '
    chmod a-x myfile
 '),
 ('56', '1', '126', '
 '),
-('56', '1', '127', '
+('56', '4', '127', '
    a is a shortcut for ugo, or “all.” So all the x permissions should now
    be unset.
 '),
 ('56', '1', '128', '
 '),
-('56', '1', '129', '
+('56', '6', '129', '
    rm myfile
 '),
 ('56', '1', '130', '
 '),
-('56', '1', '131', '
+('56', '4', '131', '
    With this command, you’re removing the file, but without write
    permissions. rm will ask if you’re sure by displaying the following
    message:
 '),
 ('56', '1', '132', '
 '),
-('56', '1', '133', '
+('56', '6', '133', '
    rm: remove ‘myfile’, overriding mode 0444?
 '),
 ('56', '1', '134', '
 '),
-('56', '1', '135', '
+('56', '4', '135', '
    You should respond by typing y and pressing Enter. This is a feature of
    rm, not a fact of permissions. Permission to delete a file comes from the
    directory permissions, and you have write permission in the directory.
@@ -5464,7 +5435,7 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('57', '1', '26', '
 '),
-('57', '1', '27', '
+('57', '4', '27', '
    Clearly there are many more directories on the system—far too many to
    describe every one.
 '),
@@ -5499,67 +5470,67 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('58', '1', '2', '
 '),
-('58', '1', '3', '
+('58', '6', '3', '
    $ cd; cp /etc/profile ./mysamplefile
 '),
 ('58', '1', '4', '
 '),
-('58', '1', '5', '
+('58', '4', '5', '
    This switches to your home directory and copies an arbitrarily chosen file
    (/etc/profile) to your current directory, in the process renaming it
    mysamplefile. This gives you a file to play with when using gzip.
 '),
 ('58', '1', '6', '
 '),
-('58', '1', '7', '
+('58', '6', '7', '
    $ ls -l
 '),
 ('58', '1', '8', '
 '),
-('58', '1', '9', '
+('58', '4', '9', '
    Lists the contents of the current directory. Note the size of
    mysamplefile.
 '),
 ('58', '1', '10', '
 '),
-('58', '1', '11', '
+('58', '6', '11', '
    $ gzip mysamplefile
 '),
 ('58', '1', '12', '
 '),
-('58', '1', '13', '
+('58', '4', '13', '
    Compresses mysamplefile.
 '),
 ('58', '1', '14', '
 '),
-('58', '1', '15', '
+('58', '6', '15', '
    $ ls -l
 '),
 ('58', '1', '16', '
 '),
-('58', '1', '17', '
+('58', '4', '17', '
    Observe the results of this command: mysamplefile is now called
    mysamplefile.gz . It’s also a good bit smaller.
 '),
 ('58', '1', '18', '
 '),
-('58', '1', '19', '
+('58', '6', '19', '
    $ gunzip mysamplefile.gz; ls -l
 '),
 ('58', '1', '20', '
 '),
-('58', '1', '21', '
+('58', '4', '21', '
    This uncompresses the file. Observe that mysamplefile has returned to its
    original state. Notice that to uncompress, one uses gunzip, not gzip.
 '),
 ('58', '1', '22', '
 '),
-('58', '1', '23', '
+('58', '6', '23', '
    $ rm mysamplefile
 '),
 ('58', '1', '24', '
 '),
-('58', '1', '25', '
+('58', '4', '25', '
    Use this command to remove the file, since it was just to practice with.
 '),
 ('59', '1', '0', '
@@ -5581,18 +5552,18 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('59', '1', '4', '
 '),
-('59', '1', '5', '
+('59', '6', '5', '
    $ locate XF86Config
 '),
 ('59', '1', '6', '
 '),
-('59', '1', '7', '
+('59', '4', '7', '
    This should be pretty fast. You’ll get a list of filenames that contain
    XF86Config, something like this:
 '),
 ('59', '1', '8', '
 '),
-('59', '1', '9', '
+('59', '6', '9', '
    /etc/X11/XF86Config
 
    /usr/X11R6/lib/X11/XF86Config
@@ -5603,23 +5574,23 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('59', '1', '10', '
 '),
-('59', '1', '11', '
+('59', '4', '11', '
    Now try the find command:
 '),
 ('59', '1', '12', '
 '),
-('59', '1', '13', '
+('59', '6', '13', '
    $ find / -name XF86Config
 '),
 ('59', '1', '14', '
 '),
-('59', '1', '15', '
+('59', '4', '15', '
    You will hear a lot of disk activity, and this will take a lot longer.
    Results will look something like this:
 '),
 ('59', '1', '16', '
 '),
-('59', '1', '17', '
+('59', '6', '17', '
    /etc/X11/XF86Config
 
    /usr/X11R6/lib/X11/XF86Config
@@ -5632,7 +5603,7 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('59', '1', '18', '
 '),
-('59', '1', '19', '
+('59', '4', '19', '
    Notice that find found only files that were named exactly XF86Config,
    rather than any files containing that string of letters. Also, find actually
    tried to look in every directory on the system—including some where
@@ -5651,12 +5622,12 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('59', '1', '22', '
 '),
-('59', '1', '23', '
+('59', '6', '23', '
    $ find / -name ’*XF86Config*’
 '),
 ('59', '1', '24', '
 '),
-('59', '1', '25', '
+('59', '4', '25', '
    Like most of the command line tools, find accepts wildcards as arguments.
 '),
 ('59', '1', '26', '
@@ -5676,43 +5647,43 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('60', '1', '2', '
 '),
-('60', '1', '3', '
+('60', '6', '3', '
    $ file /bin/cp
 '),
 ('60', '1', '4', '
 '),
-('60', '1', '5', '
+('60', '4', '5', '
    You should see something like this:
 '),
 ('60', '1', '6', '
 '),
-('60', '1', '7', '
+('60', '6', '7', '
    /bin/cp: ELF 32-bit LSB executable, Intel 386, version 1
 '),
 ('60', '1', '8', '
 '),
-('60', '1', '9', '
+('60', '4', '9', '
    Skipping the technical parts, this is an executable file for Intel
    machines.
 '),
 ('60', '1', '10', '
 '),
-('60', '1', '11', '
+('60', '6', '11', '
    $ file /etc/init.d/boot
 '),
 ('60', '1', '12', '
 '),
-('60', '1', '13', '
+('60', '4', '13', '
    The preceding command gives this response:
 '),
 ('60', '1', '14', '
 '),
-('60', '1', '15', '
+('60', '6', '15', '
    /etc/init.d/boot: Bourne shell script text
 '),
 ('60', '1', '16', '
 '),
-('60', '1', '17', '
+('60', '4', '17', '
    meaning that this is a text file containing a Bourne shell script.
 '),
 ('61', '1', '0', '
@@ -5763,12 +5734,12 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('63', '1', '6', '
 '),
-('63', '1', '7', '
+('63', '6', '7', '
    zless /usr/doc/ae/changelog.Debian.gz
 '),
 ('63', '1', '8', '
 '),
-('63', '1', '9', '
+('63', '2', '9', '
    Tip: zless is great for viewing documentation, which is often shipped in .gz
    form.
 '),
@@ -5841,12 +5812,12 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('65', '1', '2', '
 '),
-('65', '1', '3', '
+('65', '6', '3', '
    $ ae filename.txt
 '),
 ('65', '1', '4', '
 '),
-('65', '1', '5', '
+('65', '4', '5', '
    This will bring up an editor screen. The top part of this screen provides
    some quick help; the bottom shows the file you’re editing. Moving around
    in this editor is simple; just use the arrow keys. You can save the file
@@ -5929,7 +5900,7 @@ a* This gives you every filename that starts with a, regardless of
 '),
 ('67', '1', '14', '
 '),
-('67', '1', '15', '
+('67', '3', '15', '
  [1]
 http://www.gnome.org/
 '),
@@ -5981,7 +5952,7 @@ http://www.gnome.org/
 '),
 ('68', '1', '10', '
 '),
-('68', '1', '11', '
+('68', '6', '11', '
     1. Move the mouse pointer into the center of the xterm window.
 
     2. Hold down the Control key and the right mouse button
@@ -5998,7 +5969,7 @@ http://www.gnome.org/
 '),
 ('69', '1', '2', '
 '),
-('69', '1', '3', '
+('69', '7', '3', '
 9.3.1 The Mouse
 '),
 ('69', '1', '4', '
@@ -6032,7 +6003,7 @@ http://www.gnome.org/
 '),
 ('69', '1', '10', '
 '),
-('69', '1', '11', '
+('69', '7', '11', '
 9.3.2 X Clients
 '),
 ('69', '1', '12', '
@@ -6067,7 +6038,7 @@ http://www.gnome.org/
 '),
 ('69', '1', '20', '
 '),
-('69', '1', '21', '
+('69', '7', '21', '
 9.3.3 Troubleshooting
 '),
 ('69', '1', '22', '
@@ -6079,7 +6050,7 @@ http://www.gnome.org/
 '),
 ('69', '1', '24', '
 '),
-('69', '1', '25', '
+('69', '7', '25', '
 9.3.4 Leaving the X Environment
 '),
 ('69', '1', '26', '
@@ -6123,22 +6094,22 @@ http://www.gnome.org/
 '),
 ('70', '1', '8', '
 '),
-('70', '1', '9', '
+('70', '6', '9', '
    $ touch ~/.xsession
 '),
 ('70', '1', '10', '
 '),
-('70', '1', '11', '
+('70', '4', '11', '
    This creates the file.
 '),
 ('70', '1', '12', '
 '),
-('70', '1', '13', '
+('70', '6', '13', '
    $ chmod u+x ~/.xsession
 '),
 ('70', '1', '14', '
 '),
-('70', '1', '15', '
+('70', '4', '15', '
    This makes the file executable.
 '),
 ('70', '1', '16', '
@@ -6198,12 +6169,12 @@ http://www.gnome.org/
 '),
 ('70', '1', '30', '
 '),
-('70', '1', '31', '
+('70', '6', '31', '
    exec fvwm
 '),
 ('70', '1', '32', '
 '),
-('70', '1', '33', '
+('70', '4', '33', '
    This will run fvwm, and the X session will end when fvwm exits. If you do
    it without the exec, everything will appear to behave the same way, but
    behind the scenes .xsession will hang around waiting for fvwm, and
@@ -6237,7 +6208,7 @@ http://www.gnome.org/
 '),
 ('70', '1', '40', '
 '),
-('70', '1', '41', '
+('70', '6', '41', '
    xterm &amp;
 
    xclock &amp;
@@ -6248,7 +6219,7 @@ http://www.gnome.org/
 '),
 ('70', '1', '42', '
 '),
-('70', '1', '43', '
+('70', '4', '43', '
    This will fork off an xterm and an xclock and then run fvwm and wait for
    it to finish. When you exit fvwm, it will move on to the last line, which
    appends the current date and time to the file ~/logout-time.
@@ -6261,7 +6232,7 @@ http://www.gnome.org/
 '),
 ('70', '1', '46', '
 '),
-('70', '1', '47', '
+('70', '6', '47', '
    xclock &amp;
 
    fvwm &amp;
@@ -6270,7 +6241,7 @@ http://www.gnome.org/
 '),
 ('70', '1', '48', '
 '),
-('70', '1', '49', '
+('70', '4', '49', '
    This script will run xclock and fvwm in the background and then replace
    itself with xterm. When you exit the xterm, your X session will end.
 '),
@@ -6344,7 +6315,7 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('73', '1', '2', '
 '),
-('73', '1', '3', '
+('73', '7', '3', '
 10.2.1 Mounting a Filesystem
 '),
 ('73', '1', '4', '
@@ -6408,7 +6379,7 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('73', '1', '16', '
 '),
-('73', '1', '17', '
+('73', '7', '17', '
 10.2.2 Example: Mounting a CD-ROM
 '),
 ('73', '1', '18', '
@@ -6423,47 +6394,47 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('73', '1', '20', '
 '),
-('73', '1', '21', '
+('73', '6', '21', '
    su
 '),
 ('73', '1', '22', '
 '),
-('73', '1', '23', '
+('73', '4', '23', '
    If you haven’t already, you need to either log in as root or gain root
    privileges with the su (super user) command. If you use su, enter the root
    password when prompted.
 '),
 ('73', '1', '24', '
 '),
-('73', '1', '25', '
+('73', '6', '25', '
    ls /cdrom
 '),
 ('73', '1', '26', '
 '),
-('73', '1', '27', '
+('73', '4', '27', '
    Use this command to see what’s in the /cdrom directory before you start.
    If you don’t have a /cdrom directory, you may have to make one using
    mkdir /cdrom.
 '),
 ('73', '1', '28', '
 '),
-('73', '1', '29', '
+('73', '6', '29', '
    mount
 '),
 ('73', '1', '30', '
 '),
-('73', '1', '31', '
+('73', '4', '31', '
    Simply typing mount with no arguments lists the currently mounted
    filesystems.
 '),
 ('73', '1', '32', '
 '),
-('73', '1', '33', '
+('73', '6', '33', '
    mount -t iso9660 CD-device /cdrom
 '),
 ('73', '1', '34', '
 '),
-('73', '1', '35', '
+('73', '4', '35', '
    For this command, you should substitute the name of your CD-ROM device for
    CD-device in the above command line. If you aren’t sure, /dev/cdrom is a
    good guess because the install process should have created this symbolic
@@ -6487,51 +6458,51 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('73', '1', '40', '
 '),
-('73', '1', '41', '
+('73', '6', '41', '
    ls /cdrom
 '),
 ('73', '1', '42', '
 '),
-('73', '1', '43', '
+('73', '4', '43', '
    Confirms that /cdrom now contains whatever is on the CD in your drive.
 '),
 ('73', '1', '44', '
 '),
-('73', '1', '45', '
+('73', '6', '45', '
    mount
 '),
 ('73', '1', '46', '
 '),
-('73', '1', '47', '
+('73', '4', '47', '
    Displays the list of filesystems again; notice that your CD drive is now
    mounted.
 '),
 ('73', '1', '48', '
 '),
-('73', '1', '49', '
+('73', '6', '49', '
    umount /cdrom
 '),
 ('73', '1', '50', '
 '),
-('73', '1', '51', '
+('73', '4', '51', '
    This unmounts the CD. It’s now safe to remove the CD from the drive.
    Notice that the command is umount with no “n,” even though it’s used to
    unmount the filesystem.
 '),
 ('73', '1', '52', '
 '),
-('73', '1', '53', '
+('73', '6', '53', '
    exit
 '),
 ('73', '1', '54', '
 '),
-('73', '1', '55', '
+('73', '4', '55', '
    Don’t leave yourself logged on as root. Log out immediately, just to be
    safe.
 '),
 ('73', '1', '56', '
 '),
-('73', '1', '57', '
+('73', '7', '57', '
 10.2.3 /etc/fstab: Automating the Mount Process
 '),
 ('73', '1', '58', '
@@ -6553,7 +6524,7 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('73', '1', '62', '
 '),
-('73', '1', '63', '
+('73', '6', '63', '
    # /etc/fstab: static file system information.
 
    #
@@ -6579,7 +6550,7 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('73', '1', '64', '
 '),
-('73', '1', '65', '
+('73', '4', '65', '
    The first column lists the device the filesystem resides on. The second
    lists the mount point, the third indicates the filesystem type. The line
    beginning by proc is a special filesystem. Notice that the swap partition
@@ -6618,7 +6589,7 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('73', '1', '74', '
 '),
-('73', '1', '75', '
+('73', '7', '75', '
 10.2.4 Removable Disks (Floppies, Zip Disks, Etc.)
 '),
 ('73', '1', '76', '
@@ -6628,14 +6599,14 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('73', '1', '78', '
 '),
-('73', '1', '79', '
+('73', '6', '79', '
    /dev/sda1 /mnt/zip ext2 noauto,user 0 0
 
    /dev/sda4 /mnt/dos msdos noauto,user 0 0
 '),
 ('73', '1', '80', '
 '),
-('73', '1', '81', '
+('73', '4', '81', '
    From now on, you’ll be able to mount the DOS-formatted Zip disks with the
    command mount /mnt/dos, and you be able to mount Linux-formatted Zip disks
    with the command mount /mnt/zip.
@@ -6658,7 +6629,7 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('74', '1', '2', '
 '),
-('74', '1', '3', '
+('74', '6', '3', '
      ◼ Taper is a menu-driven, easy-to-learn backup program that can back up
        to a variety of media. Its limitation is that it doesn’t handle large
        (4GB or larger) backups.
@@ -6679,7 +6650,7 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('74', '1', '4', '
 '),
-('74', '1', '5', '
+('74', '7', '5', '
 10.3.1 tar
 '),
 ('74', '1', '6', '
@@ -6707,82 +6678,82 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('74', '1', '12', '
 '),
-('74', '1', '13', '
+('74', '6', '13', '
    tar -zcvf myfiles.tar.gz /usr/local/bin
 '),
 ('74', '1', '14', '
 '),
-('74', '1', '15', '
+('74', '4', '15', '
    Let’s take a look at how this command can be broken down:
 '),
 ('74', '1', '16', '
 '),
-('74', '1', '17', '
+('74', '6', '17', '
    tar
 '),
 ('74', '1', '18', '
 '),
-('74', '1', '19', 'Name of the command.—Tells tar that options will
+('74', '4', '19', 'Name of the command.—Tells tar that options will
 follow.
 '),
 ('74', '1', '20', '
 '),
-('74', '1', '21', '
+('74', '6', '21', '
    z
 '),
 ('74', '1', '22', '
 '),
-('74', '1', '23', '
+('74', '4', '23', '
 Tells tar to use gzip compression automatically; if you use this, it’s
 good to add a .gz extension as well.
 '),
 ('74', '1', '24', '
 '),
-('74', '1', '25', '
+('74', '6', '25', '
    c
 '),
 ('74', '1', '26', '
 '),
-('74', '1', '27', '
+('74', '4', '27', '
 Tells tar to create a new archive.
 '),
 ('74', '1', '28', '
 '),
-('74', '1', '29', '
+('74', '6', '29', '
    v
 '),
 ('74', '1', '30', '
 '),
-('74', '1', '31', '
+('74', '4', '31', '
 This says to be verbose; that is, it tells tar to let you know what it’s
 doing while it creates the archive.
 '),
 ('74', '1', '32', '
 '),
-('74', '1', '33', '
+('74', '6', '33', '
    f
 '),
 ('74', '1', '34', '
 '),
-('74', '1', '35', '
+('74', '4', '35', '
 This indicates that the next thing on the command line is the name of the file
 to be created or the device to be used. If I used /dev/st0 here, for instance,
 it would write the backup to the tape drive.
 '),
 ('74', '1', '36', '
 '),
-('74', '1', '37', '
+('74', '6', '37', '
    myfiles.tar.gz
            This is the name of the file to be created.
 '),
 ('74', '1', '38', '
 '),
-('74', '1', '39', '
+('74', '6', '39', '
    /usr/local/bi
 '),
 ('74', '1', '40', '
 '),
-('74', '1', '41', '
+('74', '4', '41', '
    This is the name of the file or directory to store in the archive.
    It’s also possible to specify several items here.
 '),
@@ -6794,7 +6765,7 @@ it would write the backup to the tape drive.
 '),
 ('74', '1', '44', '
 '),
-('74', '1', '45', '
+('74', '6', '45', '
    tar -zxvf filename.tar.gz
 '),
 ('75', '1', '0', '
@@ -6815,7 +6786,7 @@ it would write the backup to the tape drive.
 '),
 ('76', '1', '2', '
 '),
-('76', '1', '3', '
+('76', '7', '3', '
 11.1.1 Introduction
 '),
 ('76', '1', '4', '
@@ -6829,7 +6800,7 @@ it would write the backup to the tape drive.
 '),
 ('76', '1', '6', '
 '),
-('76', '1', '7', '
+('76', '7', '7', '
 11.1.2 Preparation
 '),
 ('76', '1', '8', '
@@ -6847,7 +6818,7 @@ it would write the backup to the tape drive.
 '),
 ('76', '1', '12', '
 '),
-('76', '1', '13', '
+('76', '6', '13', '
      ◼ Username or login
 
      ◼ Password
@@ -6864,7 +6835,7 @@ it would write the backup to the tape drive.
 '),
 ('76', '1', '14', '
 '),
-('76', '1', '15', '
+('76', '4', '15', '
    Next, you’ll want to investigate your hardware setup: whether your modem
    works with GNU/Linux and which serial port it’s connected to.
 '),
@@ -6903,7 +6874,7 @@ it would write the backup to the tape drive.
 '),
 ('76', '1', '24', '
 '),
-('76', '1', '25', '
+('76', '7', '25', '
 11.1.3 The Easy Way: wvdial
 '),
 ('76', '1', '26', '
@@ -6920,7 +6891,7 @@ it would write the backup to the tape drive.
 '),
 ('76', '1', '30', '
 '),
-('76', '1', '31', '
+('76', '6', '31', '
      ◼ ppp
 
      ◼ ppp-pam
@@ -6929,7 +6900,7 @@ it would write the backup to the tape drive.
 '),
 ('76', '1', '32', '
 '),
-('76', '1', '33', '
+('76', '4', '33', '
    When you install the wvdial package, you may be given the opportunity to
    configure it. Otherwise, to set up wvdial, follow these simple steps:
 '),
@@ -6940,23 +6911,23 @@ it would write the backup to the tape drive.
 '),
 ('76', '1', '36', '
 '),
-('76', '1', '37', '
+('76', '6', '37', '
    touch /etc/wvdial.conf
 '),
 ('76', '1', '38', '
 '),
-('76', '1', '39', '
+('76', '4', '39', '
    touch will create the following file if the file doesn’t exist; the
    configuration program requires an existing file.
 '),
 ('76', '1', '40', '
 '),
-('76', '1', '41', '
+('76', '6', '41', '
    wvdialconf /etc/wvdial.conf
 '),
 ('76', '1', '42', '
 '),
-('76', '1', '43', '
+('76', '4', '43', '
    This means you’re creating a configuration file, /etc/wvdial.conf.
 '),
 ('76', '1', '44', '
@@ -6978,7 +6949,7 @@ it would write the backup to the tape drive.
 '),
 ('77', '1', '2', '
 '),
-('77', '1', '3', '
+('77', '6', '3', '
      ◼ /etc/init.d/network has things such as your IP address, netmask, and
        default route.
 
@@ -7126,12 +7097,12 @@ it would write the backup to the tape drive.
 '),
 ('84', '1', '8', '
 '),
-('84', '1', '9', '
+('84', '6', '9', '
    egrep ’regexp’ filename1 ...
 '),
 ('84', '1', '10', '
 '),
-('84', '1', '11', '
+('84', '4', '11', '
    The single quotation marks are not always needed, but they never hurt.
 '),
 ('84', '1', '12', '
@@ -7142,24 +7113,24 @@ it would write the backup to the tape drive.
 '),
 ('84', '1', '14', '
 '),
-('84', '1', '15', '
+('84', '6', '15', '
    egrep ’GNU’ /usr/doc/copyright/GPL
 '),
 ('84', '1', '16', '
 '),
-('84', '1', '17', '
+('84', '4', '17', '
    egrep will print the lines to standard output. If you want all lines that
    contain freedom followed by some indeterminate text, followed by GNU, you
    can do this:
 '),
 ('84', '1', '18', '
 '),
-('84', '1', '19', '
+('84', '6', '19', '
    egrep ’freedom.*GNU’ /usr/doc/copyright/GPL
 '),
 ('84', '1', '20', '
 '),
-('84', '1', '21', '
+('84', '4', '21', '
    The . means “any character,” and the * means “zero or more of the
    preceding thing,” in this case “zero or more of any character.” So .*
    matches pretty much any text at all. egrep only matches on a line-by-line
@@ -7321,7 +7292,7 @@ no other characters, nothing. Only Only is allowed.
 '),
 ('85', '1', '2', '
 '),
-('85', '1', '3', '
+('85', '7', '3', '
 13.2.1 The Real Nature of Files: Hard Links and Inodes
 '),
 ('85', '1', '4', '
@@ -7355,12 +7326,12 @@ no other characters, nothing. Only Only is allowed.
 '),
 ('85', '1', '10', '
 '),
-('85', '1', '11', '
+('85', '6', '11', '
    cd; echo "hello" &gt; firstlink
 '),
 ('85', '1', '12', '
 '),
-('85', '1', '13', '
+('85', '4', '13', '
    cd to your home directory and create a file called firstlink containing
    the word “hello.” What you’ve actually done is redirect the output of
    echo (echo just echoes back what you give to it), placing the output in
@@ -7368,89 +7339,89 @@ no other characters, nothing. Only Only is allowed.
 '),
 ('85', '1', '14', '
 '),
-('85', '1', '15', '
+('85', '6', '15', '
    cat firstlink
 '),
 ('85', '1', '16', '
 '),
-('85', '1', '17', '
+('85', '4', '17', '
    Confirms the contents of firstlink.
 '),
 ('85', '1', '18', '
 '),
-('85', '1', '19', '
+('85', '6', '19', '
    ln firstlink secondlink
 '),
 ('85', '1', '20', '
 '),
-('85', '1', '21', '
+('85', '4', '21', '
    Creates a hard link: secondlink now points to the same inode as firstlink.
 '),
 ('85', '1', '22', '
 '),
-('85', '1', '23', '
+('85', '6', '23', '
    cat secondlink
 '),
 ('85', '1', '24', '
 '),
-('85', '1', '25', '
+('85', '4', '25', '
    Confirms that secondlink is the same as firstlink.
 '),
 ('85', '1', '26', '
 '),
-('85', '1', '27', '
+('85', '6', '27', '
    ls -l
 '),
 ('85', '1', '28', '
 '),
-('85', '1', '29', '
+('85', '4', '29', '
    Notice that the number of hard links listed for firstlink and
    secondlinkfiles!inodes is 2.
 '),
 ('85', '1', '30', '
 '),
-('85', '1', '31', '
+('85', '6', '31', '
    echo "change" &gt;&gt; secondlink
 '),
 ('85', '1', '32', '
 '),
-('85', '1', '33', '
+('85', '4', '33', '
    This is another shell redirection trick (don’t worry about the details).
    You’ve appended the word “change” to secondlink. Confirm this with cat
    secondlink.
 '),
 ('85', '1', '34', '
 '),
-('85', '1', '35', '
+('85', '6', '35', '
    cat firstlink
 '),
 ('85', '1', '36', '
 '),
-('85', '1', '37', '
+('85', '4', '37', '
    firstlink also has the word “change” appended! That’s
    because firstlink and secondlink refer to the same file. It
    doesn’t matter what you call it when you change it.
 '),
 ('85', '1', '38', '
 '),
-('85', '1', '39', '
+('85', '6', '39', '
    chmod a+rwx firstlink
 '),
 ('85', '1', '40', '
 '),
-('85', '1', '41', '
+('85', '4', '41', '
    Changes permissions on firstlink. Enter the command ls -l to confirm that
    permissions on secondlink were also changed. This means that permissions
    information is stored in the inode, not in links.
 '),
 ('85', '1', '42', '
 '),
-('85', '1', '43', '
+('85', '6', '43', '
    rm firstlink
 '),
 ('85', '1', '44', '
 '),
-('85', '1', '45', '
+('85', '4', '45', '
    Deletes this link. This is a subtlety of rm. It really removes links, not
    files. Now type ls -l and notice that secondlink is still there. Also
    notice that the number of hard links for secondlink has been reduced to
@@ -7458,12 +7429,12 @@ no other characters, nothing. Only Only is allowed.
 '),
 ('85', '1', '46', '
 '),
-('85', '1', '47', '
+('85', '6', '47', '
    rm secondlink
 '),
 ('85', '1', '48', '
 '),
-('85', '1', '49', '
+('85', '4', '49', '
    Deletes the other link. When there are no more links to a file, Linux
    deletes the file itself, that is, its inode.
 '),
@@ -7483,7 +7454,7 @@ no other characters, nothing. Only Only is allowed.
 '),
 ('85', '1', '54', '
 '),
-('85', '1', '55', '
+('85', '7', '55', '
 13.2.2 Types of Files
 '),
 ('85', '1', '56', '
@@ -7502,7 +7473,7 @@ no other characters, nothing. Only Only is allowed.
 '),
 ('85', '1', '60', '
 '),
-('85', '1', '61', '
+('85', '6', '61', '
    ddirectory
 
    lsymbolic link
@@ -7517,7 +7488,7 @@ no other characters, nothing. Only Only is allowed.
 '),
 ('85', '1', '62', '
 '),
-('85', '1', '63', '
+('85', '7', '63', '
   Symbolic Links
 '),
 ('85', '1', '64', '
@@ -7592,33 +7563,33 @@ no other characters, nothing. Only Only is allowed.
 '),
 ('85', '1', '80', '
 '),
-('85', '1', '81', '
+('85', '6', '81', '
    cd; ln -s /tmp/me MyTmp
 '),
 ('85', '1', '82', '
 '),
-('85', '1', '83', '
+('85', '4', '83', '
    cd to your home directory. ln with the -s option makes a symbolic link -
    in this case, one called MyTmp that points to the filename /tmp/me.
 '),
 ('85', '1', '84', '
 '),
-('85', '1', '85', '
+('85', '6', '85', '
    ls -l MyTmp
 '),
 ('85', '1', '86', '
 '),
-('85', '1', '87', '
+('85', '4', '87', '
    Output should look like this:
 '),
 ('85', '1', '88', '
 '),
-('85', '1', '89', '
+('85', '6', '89', '
    lrwxrwxrwx 1 havoc havoc 7 Dec 6 12:50 MyTmp -&gt; /tmp/me
 '),
 ('85', '1', '90', '
 '),
-('85', '1', '91', '
+('85', '4', '91', '
    The date and user/group names will be different for you, of course. Notice
    that the file type is l, indicating that this is a symbolic link. Also
    notice the permissions: Symbolic links always have these permissions. If
@@ -7627,79 +7598,79 @@ no other characters, nothing. Only Only is allowed.
 '),
 ('85', '1', '92', '
 '),
-('85', '1', '93', '
+('85', '6', '93', '
    chmod 700 MyTmp
 '),
 ('85', '1', '94', '
 '),
-('85', '1', '95', '
+('85', '4', '95', '
    You will get a No such file or directory error, because the file /tmp/me
    doesn’t exist. Notice that you could create a symlink to it anyway.
 '),
 ('85', '1', '96', '
 '),
-('85', '1', '97', '
+('85', '6', '97', '
    mkdir /tmp/me
 '),
 ('85', '1', '98', '
 '),
-('85', '1', '99', '
+('85', '4', '99', '
    Creates the directory /tmp/me.
 '),
 ('85', '1', '100', '
 '),
-('85', '1', '101', '
+('85', '6', '101', '
    chmod 700 MyTmp
 '),
 ('85', '1', '102', '
 '),
-('85', '1', '103', '
+('85', '4', '103', '
    Should work now.
 '),
 ('85', '1', '104', '
 '),
-('85', '1', '105', '
+('85', '6', '105', '
    touch MyTmp/myfile
 '),
 ('85', '1', '106', '
 '),
-('85', '1', '107', '
+('85', '4', '107', '
    Creates a file in MyTmp.
 '),
 ('85', '1', '108', '
 '),
-('85', '1', '109', '
+('85', '6', '109', '
    ls /tmp/me
 '),
 ('85', '1', '110', '
 '),
-('85', '1', '111', '
+('85', '4', '111', '
    The file is actually created in /tmp/me.
 '),
 ('85', '1', '112', '
 '),
-('85', '1', '113', '
+('85', '6', '113', '
    rm MyTmp
 '),
 ('85', '1', '114', '
 '),
-('85', '1', '115', '
+('85', '4', '115', '
    Removes the symbolic link. Notice that this removes the link, not what it
    points to. Thus you use rm not rmdir.
 '),
 ('85', '1', '116', '
 '),
-('85', '1', '117', '
+('85', '6', '117', '
    rm /tmp/me/myfile; rmdir /tmp/me
 '),
 ('85', '1', '118', '
 '),
-('85', '1', '119', '
+('85', '4', '119', '
    Lets you clean up after yourself. symlinks!removing
 '),
 ('85', '1', '120', '
 '),
-('85', '1', '121', '
+('85', '7', '121', '
   Device Files
 '),
 ('85', '1', '122', '
@@ -7748,7 +7719,7 @@ Block devices must be accessed in larger units called blocks, which
 '),
 ('85', '1', '134', '
 '),
-('85', '1', '135', '
+('85', '7', '135', '
   Named Pipes (FIFOs)
 '),
 ('85', '1', '136', '
@@ -7777,50 +7748,50 @@ Block devices must be accessed in larger units called blocks, which
 '),
 ('85', '1', '142', '
 '),
-('85', '1', '143', '
+('85', '6', '143', '
    cd; mkfifo mypipe
 '),
 ('85', '1', '144', '
 '),
-('85', '1', '145', '
+('85', '4', '145', '
    Makes the pipe.
 '),
 ('85', '1', '146', '
 '),
-('85', '1', '147', '
+('85', '6', '147', '
            echo "hello" &gt; mypipe &amp;
 '),
 ('85', '1', '148', '
 '),
-('85', '1', '149', '
+('85', '4', '149', '
    Puts a process in the background that tries to write “hello” to the
    pipe. Notice that the process doesn’t return from the background; it is
    waiting for someone to read from the pipe.
 '),
 ('85', '1', '150', '
 '),
-('85', '1', '151', '
+('85', '6', '151', '
    cat mypipe
 '),
 ('85', '1', '152', '
 '),
-('85', '1', '153', '
+('85', '4', '153', '
    At this point, the echo process should return, because cat read from the
    pipe, and the cat process will print hello.
 '),
 ('85', '1', '154', '
 '),
-('85', '1', '155', '
+('85', '6', '155', '
    rm mypipe
 '),
 ('85', '1', '156', '
 '),
-('85', '1', '157', '
+('85', '4', '157', '
    You can delete pipes just like any other file.
 '),
 ('85', '1', '158', '
 '),
-('85', '1', '159', '
+('85', '7', '159', '
   Sockets
 '),
 ('85', '1', '160', '
@@ -7839,7 +7810,7 @@ Block devices must be accessed in larger units called blocks, which
 '),
 ('85', '1', '164', '
 '),
-('85', '1', '165', '
+('85', '7', '165', '
 13.2.3 The proc Filesystem
 '),
 ('85', '1', '166', '
@@ -7873,7 +7844,7 @@ Block devices must be accessed in larger units called blocks, which
 '),
 ('85', '1', '174', '
 '),
-('85', '1', '175', '
+('85', '7', '175', '
 13.2.4 Large-Scale Copying
 '),
 ('85', '1', '176', '
@@ -7891,32 +7862,32 @@ Block devices must be accessed in larger units called blocks, which
 '),
 ('85', '1', '180', '
 '),
-('85', '1', '181', '
+('85', '6', '181', '
    cp -a /usr/local /destination
 '),
 ('85', '1', '182', '
 '),
-('85', '1', '183', '
+('85', '4', '183', '
    However, there are some things that cp -a won’t catch[1].
    So, the best way to do a large copy job is to chain two tar commands
    together, like so:
 '),
 ('85', '1', '184', '
 '),
-('85', '1', '185', '
+('85', '3', '185', '
  [1]
 Sparse files and hard links are two examples.
 '),
 ('85', '1', '186', '
 '),
-('85', '1', '187', '
+('85', '6', '187', '
    tar -cSpf - /usr/local | tar -xvSpf -
 
    -C /destination
 '),
 ('85', '1', '188', '
 '),
-('85', '1', '189', '
+('85', '4', '189', '
    The first tar command will archive the existing directory and pipe it to
    the second. The second command will unpack the archive into the location
    you specify with -C.
@@ -7950,7 +7921,7 @@ Sparse files and hard links are two examples.
 '),
 ('86', '1', '6', '
 '),
-('86', '1', '7', '
+('86', '6', '7', '
      ◼ Never tell anyone your password.
 
      ◼ Never send your password in cleartext across the Internet by using
@@ -7966,7 +7937,7 @@ Sparse files and hard links are two examples.
 '),
 ('86', '1', '8', '
 '),
-('86', '1', '9', '
+('86', '4', '9', '
    While this is probably not of as much use to somebody not running a
    server, it is still pays to know a bit about security. Debian’s security
    mechanism is what protects your system from many viruses.
