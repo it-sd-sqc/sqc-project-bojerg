@@ -16,9 +16,23 @@
         %> </section><section> <h3><%= chapter + '.' + part.sect_num + ' ' + part.title %></h3> <%
       }
     } else {
-      //Another element to write in the section
-      //TODO implement different element types
-      %> <p><%= part.content %></p> <%
+      switch(part.type) {
+		case 1: //paragraph
+			%> <p><%= part.content %></p> <% break
+		case 2: //letter
+			%> <p class='letter'><%= part.content %></p> <% break
+		case 3: //footnote
+			%> <sup><%= part.content %></sup> <% break
+		case 4: //noindent
+			%> <p class='noindent'><%= part.content %></p> <% break
+		case 5: //diagram
+			%> <div class='diagram'><%= part.content %></div> <% break
+		case 6: //code
+			%> <code><%= part.content %></code> <% break
+		case 7: //non section header
+			%> <h4><%= part.content %></h4> <% break
+	  }
+      
     }
   }) %>
 </section>
