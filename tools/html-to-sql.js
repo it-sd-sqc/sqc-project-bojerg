@@ -45,13 +45,27 @@ INSERT INTO element_type (description)
          ('no_indent'),
          ('diagram'),
          ('code'), 
-         ('non_section_header'),
-         ('image');
+         ('non_section_header');
 
 INSERT INTO chapter (title) VALUES
 `
 const sqlInsertSection = 'INSERT INTO section (chapter_id, title, number) VALUES'
 const sqlInsertElement = 'INSERT INTO element (section_id, element_type_id, index, content) VALUES'
+
+// This object mirrors database element_type table
+const TYPE_CODE = {
+  paragraph: 1,
+  letter: 2,
+  footnote: 3,
+  no_indent: 4,
+  diagram: 5,
+  code: 6,
+  non_section_header: 7
+}
+
+// Used to compare against first char of 'letter' element. If it is not an upper-case letter, it would be
+// reasonable to assume it is not a code block
+const upperLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM'
 
 // Breaking down the DOM of book.html
 const bookParts = domRoot.querySelectorAll('.chapter')
@@ -100,11 +114,11 @@ bookParts.forEach(
       } else {
         chapterAndSection[1] = Number(chapterAndSection[1])
       }
-	  
-	  // Remove chapter numbers from title string if present
-	  if(title.split('.').length > 1) {
-		title = title.split('.')[1].replace(/[0-9]/g, '')
-	  }
+
+      // Remove chapter numbers from title string if present
+      if (title.split('.').length > 1) {
+        title = title.split('.')[1].replace(/[0-9]/g, '')
+      }
 
       // Add chapter to object if not exists
       if (!(chapterAndSection[0] in chapters)) {
@@ -113,7 +127,7 @@ bookParts.forEach(
         chapters[chapterAndSection[0]].sections = {}
       }
 
-      // Add section to object (reminder, treating intro to chapter as section 0)	  
+      // Add section to object (reminder, treating intro to chapter as section 0)
       chapters[chapterAndSection[0]].sections[chapterAndSection[1]] = {}
       chapters[chapterAndSection[0]].sections[chapterAndSection[1]].title = title
       chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts = {}
@@ -121,14 +135,32 @@ bookParts.forEach(
       let index = -1
       div.childNodes.forEach(
         (part) => {
-        // Will need to determine element_type at a later date
           if (index !== -1) { // Skip the first as title has been extracted already
             chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index] = {}
 
-            // TODO detect type and store appropriate data into content
+            // detect type, default is paragraph
+            let type = TYPE_CODE.paragraph
+
+            if (part.classList?.contains('letter')) {
+              // letter blocks can also be code... the first character of the text will likely be lower case if it is displaying code
+              const first = part.innerText.trim().substring(0, 1)
+              if (upperLetters.indexOf(first) === -1) {
+                type = TYPE_CODE.code
+              } else {
+                type = TYPE_CODE.letter
+              }
+            } else if (part.classList?.contains('footnote')) {
+              type = TYPE_CODE.footnote
+            } else if (part.classList?.contains('noindent')) {
+              type = TYPE_CODE.no_indent
+            } else if (part.rawTagName === 'h4') {
+              type = TYPE_CODE.non_section_header
+            } else if (part.rawTagName === 'pre') {
+              type = TYPE_CODE.diagram
+            }
+
             chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].content = part.innerText
-            // Calling everything a paragraph for prototyping's sake
-            chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].type_id = 1
+            chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].type_id = type
           }
           index++
         }

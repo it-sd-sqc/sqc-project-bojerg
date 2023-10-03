@@ -28,16 +28,16 @@ export const query = async function (sql, params) {
 }
 
 export const getTableOfContents = async function () {
-	const data = await query('SELECT chapter_id, title, number FROM section;')
-	let table = {}
-	data.forEach( (row) => {
-		if(row.number === 0){
-			table[row.chapter_id] = {}
-		} 
-		table[row.chapter_id][row.number] = row.title
-	})
-	
-	return table
+  const data = await query('SELECT chapter_id, title, number FROM section;')
+  const table = {}
+  data.forEach((row) => {
+    if (row.number === 0) {
+      table[row.chapter_id] = {}
+    }
+    table[row.chapter_id][row.number] = row.title
+  })
+
+  return table
 }
 
 export const getChapter = async function (number) {
@@ -60,16 +60,15 @@ express()
   })
   .get('/book', async function (req, res) {
     const table = await getTableOfContents()
-	res.render('pages/book', { table })
+    res.render('pages/book', { table })
   })
   .get('/book/:ch(\\d+)', async function (req, res) {
     const chapter = req.params.ch
     const sections = await getChapter(chapter)
-    if(sections[0]?.title) {
+    if (sections[0]?.title) {
       res.render('pages/section', { sections, chapter })
     } else {
       res.redirect('/book')
     }
-    
   })
   .listen(port, () => { console.log(`app listening on port ${port}`) })
