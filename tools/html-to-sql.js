@@ -1,4 +1,4 @@
-import { parse } from 'node-html-parser'
+﻿import { parse } from 'node-html-parser'
 import { closeSync, openSync, readFileSync, writeFileSync } from 'node:fs'
 
 const dstPath = 'docs/generated-schema.sql'
@@ -46,7 +46,8 @@ INSERT INTO element_type (description)
          ('diagram'),
          ('code'), 
          ('non_section_header'),
-         ('image');
+         ('image'),
+         ('list');
 
 INSERT INTO chapter (title) VALUES
 `
@@ -62,12 +63,13 @@ const TYPE_CODE = {
   diagram: 5,
   code: 6,
   non_section_header: 7,
-  image: 8
+  image: 8,
+  list: 9
 }
 
 // Used to compare against first char of 'letter' element. If it is not an upper-case letter, it would be
 // reasonable to assume it is not a code block
-const upperLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+const upperLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM1234567890'
 
 // Breaking down the DOM of book.html
 const bookParts = domRoot.querySelectorAll('.chapter')
@@ -145,10 +147,12 @@ bookParts.forEach(
             let content = part.innerText
 
             if (part.classList?.contains('letter')) {
-                // letter blocks can also be code... the first character of the text will likely be lower case if it is displaying code
-                // I also included a case where there are less than three spaces inside the text. This should cover all but the edgiest of edge cases
+                // letter blocks can also be code or a list... the first character of the text will likely be lower case if it is displaying code
                 const first = part.innerText.trim().substring(0, 1)
-                if (upperLetters.indexOf(first) === -1 || part.innerText.trim().split(' ').length < 3) {
+                if (first === '◼') {
+                    type = TYPE_CODE.list
+                } else if (upperLetters.indexOf(first) === -1 || part.innerText.trim().split(' ').length < 3) {
+                    // I also included a case where there are less than three spaces inside the text. This should cover all but the edgiest of edge cases
                     type = TYPE_CODE.code
                 } else {
                     type = TYPE_CODE.letter
@@ -170,7 +174,6 @@ bookParts.forEach(
                 const label = part.querySelector('p').innerText
                 // We customize the attributes to plug into an img tag on our view, then add the label so we can display it on our page too
                 content = 'alt="' + label + '" ' + imgTagAttrs[2] + ' ' + imgTagAttrs[3] + ' ' + imgTagAttrs[4] + 'SPLIT!' + label
-                console.log(content)
             }
 
             chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].content = content
