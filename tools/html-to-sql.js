@@ -69,7 +69,7 @@ const TYPE_CODE = {
 
 // Used to compare against first char of 'letter' element. If it is not an upper-case letter, it would be
 // reasonable to assume it is not a code block
-const upperLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM1234567890"“”'
+const upperLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM1234567890"“”_'
 
 // Breaking down the DOM of book.html
 const bookParts = domRoot.querySelectorAll('.chapter')
@@ -106,6 +106,7 @@ bookParts.forEach(
       div.innerHTML = div.innerHTML.replaceAll('\r\n', '\n')
       div.innerHTML = div.innerHTML.replaceAll('&gt;', '>')
       div.innerHTML = div.innerHTML.replaceAll('&lt;', '<')
+      div.innerHTML = div.innerHTML.replaceAll('&amp;', '&')
       div.innerHTML = div.innerHTML.trim()
 
       // Each h2/h3 tag has an anchor tab named something like chap01 or chap01.4 ...
@@ -149,12 +150,15 @@ bookParts.forEach(
             let content = part.innerText
 
             if (part.classList?.contains('letter')) {
+                // quirky edge case will have to get hardcoded in
+                const edgeCase1 = '2.1.8-1999-02-22'
                 // letter blocks can also be code or a list... the first character of the text will likely be lower case if it is displaying code
                 const first = part.innerText.trim().substring(0, 1)
                 if (first === '◼') {
                     type = TYPE_CODE.list
-                } else if (upperLetters.indexOf(first) === -1 || part.innerText.trim().split(' ').length < 3) {
-                    // I also included a case where there are less than three spaces inside the text. This should cover all but the edgiest of edge cases
+                } else if (upperLetters.indexOf(first) === -1 || part.innerText.trim().split(' ').length < 6 || part.innerText.indexOf(edgeCase1) !== -1) {
+                    // I also included a case where there are less than six spaces inside the text. This should cover all but the edgiest of edge cases
+                    // Lastly,
                     type = TYPE_CODE.code
                 } else {
                     type = TYPE_CODE.letter
