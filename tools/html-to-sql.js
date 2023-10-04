@@ -104,6 +104,8 @@ bookParts.forEach(
 
       // Clean up collected HTML
       div.innerHTML = div.innerHTML.replaceAll('\r\n', '\n')
+      div.innerHTML = div.innerHTML.replaceAll('&gt;', '>')
+      div.innerHTML = div.innerHTML.replaceAll('&lt;', '<')
       div.innerHTML = div.innerHTML.trim()
 
       // Each h2/h3 tag has an anchor tab named something like chap01 or chap01.4 ...
