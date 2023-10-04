@@ -40,7 +40,8 @@ INSERT INTO element_type (description)
          ('diagram'),
          ('code'), 
          ('non_section_header'),
-         ('image');
+         ('image'),
+         ('list');
 
 INSERT INTO chapter (title) VALUES
 (' Introduction'),
@@ -527,7 +528,7 @@ http://www.debian.org/social_contract
 '),
 ('6', '1', '0', '
 '),
-('6', '6', '1', '
+('6', '2', '1', '
      “A journey of a thousand miles must begin with a single step.”
      —Lao-Tsu
 '),
@@ -635,7 +636,7 @@ procedure.
 '),
 ('8', '1', '10', '
 '),
-('8', '4', '11', '
+('8', '9', '11', '
      ◼ Your host name (you may be able to decide this on your own)
 
      ◼ Your domain name
@@ -1167,7 +1168,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('9', '1', '106', '
 '),
-('9', '6', '107', '
+('9', '2', '107', '
     1. Boot the installation system
 
     2. Initial system configuration
@@ -1291,7 +1292,7 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 ('10', '1', '22', '
 '),
 ('10', '6', '23', '
-   C:\WINDOWS&gt;D:
+   C:\WINDOWS>D:
 '),
 ('10', '1', '24', '
 '),
@@ -1300,8 +1301,8 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('10', '1', '26', '
 '),
-('10', '2', '27', '
-   D:\&gt;CD
+('10', '6', '27', '
+   D:\>CD
 
    \DISTS\SLINK\MAIN\DISKS-I386\2.1.8-1999-02-22
 '),
@@ -1322,10 +1323,10 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('10', '1', '32', '
 '),
-('10', '2', '33', '
+('10', '6', '33', '
    D:\DISTS\SLINK\MAIN\DISKS-I386\
 
-   2.1.8-1999-02-22&gt;rawrite2
+   2.1.8-1999-02-22>rawrite2
 
    RaWrite 2.0 - Write disk file to
 
@@ -1365,10 +1366,10 @@ http://metalab.unc.edu/LDP/HOWTO/Multi-Disk-HOWTO.html
 '),
 ('10', '1', '44', '
 '),
-('10', '2', '45', '
+('10', '6', '45', '
    D:\DISTS\SLINK\MAIN\DISKS-I386\
 
-   2.1.8-1999-02-22&gt;rawrite2
+   2.1.8-1999-02-22>rawrite2
 
    RaWrite 2.0 - Write disk file to
 
@@ -1583,7 +1584,7 @@ http://www.linuxjournal.com
 '),
 ('17', '1', '12', '
 '),
-('17', '8', '13', 'alt="Figure 3.1: cfdisk screenshot"" height="300" src="/images/img2.png" width="459"SPLIT!Figure 3.1: cfdisk screenshot'),
+('17', '8', '13', 'alt="Figure 3.1: cfdisk screenshot" height="300" src="/images/img2.png" width="459"SPLIT!Figure 3.1: cfdisk screenshot'),
 ('17', '1', '14', '
 '),
 ('17', '1', '15', '
@@ -2118,7 +2119,7 @@ http://metalab.unc.edu/LDP/HOWTO/PCMCIA-HOWTO.html
 '),
 ('32', '1', '10', '
 '),
-('32', '6', '11', '
+('32', '2', '11', '
     1. Choose the access method to use.
 
     2. Update list of available packages, if possible.
@@ -2189,7 +2190,7 @@ Access
 '),
 ('32', '1', '26', '
 '),
-('32', '8', '27', 'alt="Figure 3.2: dselect Access screen"" height="301" src="/images/img3.png" width="460"SPLIT!Figure 3.2: dselect Access screen'),
+('32', '8', '27', 'alt="Figure 3.2: dselect Access screen" height="301" src="/images/img3.png" width="460"SPLIT!Figure 3.2: dselect Access screen'),
 ('32', '1', '28', '
 '),
 ('32', '1', '29', '
@@ -2235,7 +2236,7 @@ multi_cd.
 '),
 ('32', '1', '36', '
 '),
-('32', '6', '37', '
+('32', '2', '37', '
     1. Insert the CD in your CD-ROM drive.
 
     2. From the main dselect menu, select “Install.”
@@ -2347,7 +2348,7 @@ apt.
 '),
 ('32', '1', '66', '
 '),
-('32', '6', '67', '
+('32', '9', '67', '
      ◼ To exit the “Select” screen after all selections are complete, press
        Enter. This will return you to the main screen if there is no problem
        with your selection. Otherwise, you will be asked to deal with that
@@ -2495,7 +2496,7 @@ apt.
 '),
 ('32', '1', '100', '
 '),
-('32', '6', '101', '
+('32', '9', '101', '
      ◼ libc6-pic
 
      ◼ slang1-pic
@@ -2524,7 +2525,7 @@ apt.
 '),
 ('32', '1', '104', '
 '),
-('32', '6', '105', '
+('32', '9', '105', '
      ◼ lynx
 
      ◼ debiandoc-sgml
@@ -2574,7 +2575,7 @@ apt.
 '),
 ('32', '1', '118', '
 '),
-('32', '6', '119', '
+('32', '2', '119', '
    __ Opt devel    newt0.25-dev Developer’s toolkit for newt
 
    __ Opt devel    slang1-dev   The S-Lang programming library
@@ -2778,7 +2779,7 @@ Package names.
 '),
 ('33', '1', '6', '
 '),
-('33', '6', '7', '
+('33', '9', '7', '
      ◼ efax_08a-1.deb
 
      ◼ lrzsz_0.12b-1.deb
@@ -3023,7 +3024,7 @@ Package names.
 '),
 ('37', '1', '16', '
 '),
-('37', '8', '17', 'alt="Figure 4.1: Sample session with su"" height="150" src="/images/img4.png" width="390"SPLIT!Figure 4.1: Sample session with su'),
+('37', '8', '17', 'alt="Figure 4.1: Sample session with su" height="150" src="/images/img4.png" width="390"SPLIT!Figure 4.1: Sample session with su'),
 ('37', '1', '18', '
 '),
 ('37', '1', '19', '
@@ -3360,7 +3361,7 @@ Files are a facility for storing and organizing information,
 '),
 ('42', '1', '10', '
 '),
-('42', '6', '11', '
+('42', '9', '11', '
      ◼ Filenames are case-sensitive. That is, MYFILE and MyFile are
      different files.
 
@@ -3376,7 +3377,7 @@ Files are a facility for storing and organizing information,
      ◼ While you can use almost any letters or symbols in a filename, in
        practice it’s a bad idea. It is better to avoid characters that often
        have special meanings on the command line, including: { } ( ) [ ]
-       ’ ‘ " \/ &gt; &lt; | ; ! # &amp; ^ * %
+       ’ ‘ " \/ > < | ; ! # & ^ * %
 
      ◼ Also avoid putting spaces in filenames. If you want to separate words
        in a name, good choices are the period, hyphen, and underscore. You
@@ -4298,7 +4299,7 @@ it’s technically more portable to use the signal name.
 '),
 ('49', '1', '4', '
 '),
-('49', '8', '5', 'alt="Figure 6.1: Sample printenv output"" height="357" src="/images/img5.png" width="333"SPLIT!Figure 6.1: Sample printenv output'),
+('49', '8', '5', 'alt="Figure 6.1: Sample printenv output" height="357" src="/images/img5.png" width="333"SPLIT!Figure 6.1: Sample printenv output'),
 ('49', '1', '6', '
 '),
 ('49', '1', '7', '
@@ -4352,7 +4353,7 @@ it’s technically more portable to use the signal name.
 '),
 ('49', '1', '22', '
 '),
-('49', '8', '23', 'alt="Figure 6.2: Changing the prompt"" height="108" src="/images/img6.png" width="234"SPLIT!Figure 6.2: Changing the prompt'),
+('49', '8', '23', 'alt="Figure 6.2: Changing the prompt" height="108" src="/images/img6.png" width="234"SPLIT!Figure 6.2: Changing the prompt'),
 ('49', '1', '24', '
 '),
 ('49', '6', '25', '
@@ -4587,7 +4588,7 @@ User configuration affects only a single user. Dotfiles are used for
 '),
 ('52', '1', '8', '
 '),
-('52', '8', '9', 'alt="Figure 6.3: Redirecting output"" height="71" src="/images/img7.png" width="176"SPLIT!Figure 6.3: Redirecting output'),
+('52', '8', '9', 'alt="Figure 6.3: Redirecting output" height="71" src="/images/img7.png" width="176"SPLIT!Figure 6.3: Redirecting output'),
 ('53', '1', '0', '
 '),
 ('53', '1', '1', '
@@ -4630,13 +4631,13 @@ User configuration affects only a single user. Dotfiles are used for
 ('53', '1', '11', '
    For example, the echo command sends it output to standard output, normally
    the screen. But you can send it to a file instead with the output
-   redirection operator, &gt;. For example, to put the word
+   redirection operator, >. For example, to put the word
    “Hello” in the file myfile, use this command:
 '),
 ('53', '1', '12', '
 '),
 ('53', '6', '13', '
-   echo Hello &gt; myfile
+   echo Hello > myfile
 '),
 ('53', '1', '14', '
 '),
@@ -4648,7 +4649,7 @@ User configuration affects only a single user. Dotfiles are used for
 '),
 ('53', '1', '17', '
    You can change the standard input of a command with the input redirection
-   operator, &lt;. For example, cat &lt; myfile will display the contents
+   operator, <. For example, cat < myfile will display the contents
    of myfile. This is not useful in practice; for convenience, the cat command
    accepts a filename argument. So you can simply say cat myfile, and the
    effect will be the same. redirection operators
@@ -4656,7 +4657,7 @@ User configuration affects only a single user. Dotfiles are used for
 ('53', '1', '18', '
 '),
 ('53', '1', '19', '
-   Under the hood, cat &lt; myfile means that the shell opens myfile and then
+   Under the hood, cat < myfile means that the shell opens myfile and then
    feeds its contents to the standard input of cat. cat myfile, without the
    redirection operator, means that the cat command receives one argument
    (myfile) opens the file itself, and then displays the file.
@@ -4724,11 +4725,11 @@ broken vertical bar, but it can almost always be found above the backslash (\).
 ('53', '1', '40', '
 '),
 ('53', '6', '41', '
-   tac /usr/doc/copyright/GPL &gt; tmpfile
+   tac /usr/doc/copyright/GPL > tmpfile
 
-           tr G Q &lt; tmpfile &gt; tmpfile2
+           tr G Q < tmpfile > tmpfile2
 
-           less &lt; tmpfile2
+           less < tmpfile2
 
            rm tmpfile tmpfile2
 '),
@@ -5952,7 +5953,7 @@ http://www.gnome.org/
 '),
 ('68', '1', '10', '
 '),
-('68', '6', '11', '
+('68', '2', '11', '
     1. Move the mouse pointer into the center of the xterm window.
 
     2. Hold down the Control key and the right mouse button
@@ -6025,8 +6026,8 @@ http://www.gnome.org/
 ('69', '1', '17', '
    You may notice that the original xterm is now useless, because your shell
    is waiting for the second xterm to finish. To avoid this problem, you can
-   run the X client in the backgroundby adding a &amp; after the command name
-   like this: xterm &amp;. If you forget, you can place a running process in the
+   run the X client in the backgroundby adding a & after the command name
+   like this: xterm &. If you forget, you can place a running process in the
    background. First suspend the process with CTRL-z, and then place it in
    the background with the bg command.
 '),
@@ -6145,7 +6146,7 @@ http://www.gnome.org/
    them in the background. Otherwise .xsession will pause until each client
    exits and then continue to the next line. See the previous section on
    running jobs in the background (basically you want to put an ampersand at
-   the end, as in xterm &amp;).
+   the end, as in xterm &).
 '),
 ('70', '1', '24', '
 '),
@@ -6153,7 +6154,7 @@ http://www.gnome.org/
    You can take advantage of this behavior, though. If you want to run
    commands at the end of your X session, you can have your .xsession run a
    window manager or the like and wait for it to finish. That is, leave off
-   the exec and the &amp;; just enter fvwm by itself. Then put the commands of
+   the exec and the &; just enter fvwm by itself. Then put the commands of
    your choice after fvwm.
 '),
 ('70', '1', '26', '
@@ -6187,7 +6188,7 @@ http://www.gnome.org/
 ('70', '1', '35', '
    A more useful .xsession runs a few clients before starting the window
    manager. For example, you might want some xterms and an xclock whenever
-   you start X. No problem; just enter xterm &amp; xterm &amp; xclock &amp; exec fvwm.
+   you start X. No problem; just enter xterm & xterm & xclock & exec fvwm.
    Two xterms and an xclock start up in the background, and then the window
    manager is launched. When you quit the window manager, you’ll also quit X.
 '),
@@ -6209,13 +6210,13 @@ http://www.gnome.org/
 ('70', '1', '40', '
 '),
 ('70', '6', '41', '
-   xterm &amp;
+   xterm &
 
-   xclock &amp;
+   xclock &
 
    fvwm
 
-   date &gt;&gt; ~/logout-time
+   date >> ~/logout-time
 '),
 ('70', '1', '42', '
 '),
@@ -6233,9 +6234,9 @@ http://www.gnome.org/
 ('70', '1', '46', '
 '),
 ('70', '6', '47', '
-   xclock &amp;
+   xclock &
 
-   fvwm &amp;
+   fvwm &
 
    exec xterm
 '),
@@ -6529,7 +6530,7 @@ The filesystem refers to the whole directory tree, starting with the
 
    #
 
-   # &lt;file system&gt; &lt;mount point&gt; &lt;type&gt; &lt;options&gt; #&lt;dump &gt; &lt;pass&gt;
+   #     # 
 
    /dev/hda1 / ext2 defaults 0 1
 
@@ -6547,30 +6548,29 @@ The filesystem refers to the whole directory tree, starting with the
 
    /dev/fd0 /floppy auto noauto,sync 0 0
 
+
 '),
-('73', '1', '64', '
-'),
-('73', '4', '65', '
+('73', '4', '64', '
    The first column lists the device the filesystem resides on. The second
    lists the mount point, the third indicates the filesystem type. The line
    beginning by proc is a special filesystem. Notice that the swap partition
    (/dev/hda3 in the example) has no mount point, so the mount point column
    contains none.
 '),
-('73', '1', '66', '
+('73', '1', '65', '
 '),
-('73', '1', '67', '
+('73', '1', '66', '
    The last three columns may require some explanation.
 '),
-('73', '1', '68', '
+('73', '1', '67', '
 '),
-('73', '1', '69', '
+('73', '1', '68', '
    The fifth column is used by the dump utility to decide when to back up the
    filesystem. In most cases, you can put 0 here.
 '),
-('73', '1', '70', '
+('73', '1', '69', '
 '),
-('73', '1', '71', '
+('73', '1', '70', '
    The sixth column is used by fsck to decide in what order to check
    filesystems when you boot the system. The root filesystem should have a 1
    in this field, filesystems that don’t need to be checked (such as the swap
@@ -6580,40 +6580,40 @@ The filesystem refers to the whole directory tree, starting with the
    by the Linux kernel as secondary memory. However, for historical reasons,
    the swap partitions are still listed in the same file as the filesystems.
 '),
-('73', '1', '72', '
+('73', '1', '71', '
 '),
-('73', '1', '73', '
+('73', '1', '72', '
    Column four contains one or more options to use when mounting the
    filesystem. You can check the mount manpage for a summary; see section 5.1
    on page [*].
 '),
-('73', '1', '74', '
+('73', '1', '73', '
 '),
-('73', '7', '75', '
+('73', '7', '74', '
 10.2.4 Removable Disks (Floppies, Zip Disks, Etc.)
 '),
-('73', '1', '76', '
+('73', '1', '75', '
 '),
-('73', '1', '77', '
+('73', '1', '76', '
    Add the following lines to your /etc/fstab file:
 '),
-('73', '1', '78', '
+('73', '1', '77', '
 '),
-('73', '6', '79', '
+('73', '6', '78', '
    /dev/sda1 /mnt/zip ext2 noauto,user 0 0
 
    /dev/sda4 /mnt/dos msdos noauto,user 0 0
 '),
-('73', '1', '80', '
+('73', '1', '79', '
 '),
-('73', '4', '81', '
+('73', '4', '80', '
    From now on, you’ll be able to mount the DOS-formatted Zip disks with the
    command mount /mnt/dos, and you be able to mount Linux-formatted Zip disks
    with the command mount /mnt/zip.
 '),
-('73', '1', '82', '
+('73', '1', '81', '
 '),
-('73', '1', '83', '
+('73', '1', '82', '
    If you have SCSI hard disks in your system, you’ll have to change sda to
    sdb or sdc in the example above.
 '),
@@ -6629,7 +6629,7 @@ The filesystem refers to the whole directory tree, starting with the
 '),
 ('74', '1', '2', '
 '),
-('74', '6', '3', '
+('74', '9', '3', '
      ◼ Taper is a menu-driven, easy-to-learn backup program that can back up
        to a variety of media. Its limitation is that it doesn’t handle large
        (4GB or larger) backups.
@@ -6818,7 +6818,7 @@ it would write the backup to the tape drive.
 '),
 ('76', '1', '12', '
 '),
-('76', '6', '13', '
+('76', '9', '13', '
      ◼ Username or login
 
      ◼ Password
@@ -6891,7 +6891,7 @@ it would write the backup to the tape drive.
 '),
 ('76', '1', '30', '
 '),
-('76', '6', '31', '
+('76', '9', '31', '
      ◼ ppp
 
      ◼ ppp-pam
@@ -6949,7 +6949,7 @@ it would write the backup to the tape drive.
 '),
 ('77', '1', '2', '
 '),
-('77', '6', '3', '
+('77', '9', '3', '
      ◼ /etc/init.d/network has things such as your IP address, netmask, and
        default route.
 
@@ -7327,7 +7327,7 @@ no other characters, nothing. Only Only is allowed.
 ('85', '1', '10', '
 '),
 ('85', '6', '11', '
-   cd; echo "hello" &gt; firstlink
+   cd; echo "hello" > firstlink
 '),
 ('85', '1', '12', '
 '),
@@ -7381,7 +7381,7 @@ no other characters, nothing. Only Only is allowed.
 ('85', '1', '30', '
 '),
 ('85', '6', '31', '
-   echo "change" &gt;&gt; secondlink
+   echo "change" >> secondlink
 '),
 ('85', '1', '32', '
 '),
@@ -7585,7 +7585,7 @@ no other characters, nothing. Only Only is allowed.
 ('85', '1', '88', '
 '),
 ('85', '6', '89', '
-   lrwxrwxrwx 1 havoc havoc 7 Dec 6 12:50 MyTmp -&gt; /tmp/me
+   lrwxrwxrwx 1 havoc havoc 7 Dec 6 12:50 MyTmp -> /tmp/me
 '),
 ('85', '1', '90', '
 '),
@@ -7759,7 +7759,7 @@ Block devices must be accessed in larger units called blocks, which
 ('85', '1', '146', '
 '),
 ('85', '6', '147', '
-           echo "hello" &gt; mypipe &amp;
+           echo "hello" > mypipe &
 '),
 ('85', '1', '148', '
 '),
@@ -7921,7 +7921,7 @@ Sparse files and hard links are two examples.
 '),
 ('86', '1', '6', '
 '),
-('86', '6', '7', '
+('86', '9', '7', '
      ◼ Never tell anyone your password.
 
      ◼ Never send your password in cleartext across the Internet by using
