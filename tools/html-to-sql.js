@@ -139,58 +139,59 @@ bookParts.forEach(
       chapters[chapterAndSection[0]].sections[chapterAndSection[1]].title = title
       chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts = {}
 
-      let index = -1
-      div.childNodes.forEach(
+      let index = 0
+      div.childNodes.slice(1).forEach(
         (part) => {
-          if (index !== -1) { // Skip the first as title has been extracted already
-            chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index] = {}
+          // Skip empty child nodes
+          if (part.innerText.trim() === '') { return }
 
-            // detect type, default is paragraph
-            let type = TYPE_CODE.paragraph
-            let content = part.innerText
+          // detect type, default is paragraph
+          let type = TYPE_CODE.paragraph
+          let content = part.innerText
 
-            if (part.classList?.contains('letter')) {
-                // quirky edge case will have to get hardcoded in
-                const edgeCase1 = '2.1.8-1999-02-22'
-                // letter blocks can also be code or a list... the first character of the text will likely be lower case if it is displaying code
-                const first = part.innerText.trim().substring(0, 1)
-                if (first === '◼') {
-                    type = TYPE_CODE.list
-                } else if (upperLetters.indexOf(first) === -1 || part.innerText.trim().split(' ').length < 6 || part.innerText.indexOf(edgeCase1) !== -1) {
-                    // I also included a case where there are less than six spaces inside the text. This should cover all but the edgiest of edge cases
-                    // Lastly,
-                    type = TYPE_CODE.code
-                } else {
-                    type = TYPE_CODE.letter
-                }
-            } else if (part.classList?.contains('footnote')) {
-                type = TYPE_CODE.footnote
-            } else if (part.classList?.contains('noindent')) {
-                const first = part.innerText.trim().substring(0, 1)
-                if (first === '◼') {
-                    type = TYPE_CODE.list
-                } else {
-                    type = TYPE_CODE.no_indent
-                }
-            } else if (part.rawTagName === 'h4') {
-                type = TYPE_CODE.non_section_header
-            } else if (part.rawTagName === 'pre') {
-                type = TYPE_CODE.diagram
-                // Remove anchor tag
-                content = '\t\t\t' + content.split('</a>')[1]
-            } else if (part.classList?.contains('fig')) {
-                type = TYPE_CODE.image
-                // Remove figure div and store the image attributes as content
-                const imgTagAttrs = part.querySelector('img').rawAttrs.split(' ')
-                const label = part.querySelector('p').innerText
-                // We customize the attributes to plug into an img tag on our view, then add the label so we can display it on our page too
-                content = 'alt="' + label + '" ' + imgTagAttrs[2] + ' ' + imgTagAttrs[3] + ' ' + imgTagAttrs[4] + 'SPLIT!' + label
+          if (part.classList?.contains('letter')) {
+            // quirky edge case will have to get hardcoded in
+            const edgeCase1 = '2.1.8-1999-02-22'
+            // letter blocks can also be code or a list... the first character of the text will likely be lower case if it is displaying code
+            const first = part.innerText.trim().substring(0, 1)
+            if (first === '◼') {
+              type = TYPE_CODE.list
+            } else if (upperLetters.indexOf(first) === -1 || part.innerText.trim().split(' ').length < 6 || part.innerText.indexOf(edgeCase1) !== -1) {
+              // I also included a case where there are less than six spaces inside the text. This should cover all but the edgiest of edge cases
+              // Lastly,
+              type = TYPE_CODE.code
+            } else {
+              type = TYPE_CODE.letter
             }
-
-            chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].content = content
-            chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].type_id = type
+          } else if (part.classList?.contains('footnote')) {
+            type = TYPE_CODE.footnote
+          } else if (part.classList?.contains('noindent')) {
+            const first = part.innerText.trim().substring(0, 1)
+            if (first === '◼') {
+              type = TYPE_CODE.list
+            } else {
+              type = TYPE_CODE.no_indent
+            }
+          } else if (part.rawTagName === 'h4') {
+            type = TYPE_CODE.non_section_header
+          } else if (part.rawTagName === 'pre') {
+            type = TYPE_CODE.diagram
+            // Remove anchor tag
+            content = '\t\t\t' + content.split('</a>')[1]
+          } else if (part.classList?.contains('fig')) {
+            type = TYPE_CODE.image
+            // Remove figure div and store the image attributes as content
+            const imgTagAttrs = part.querySelector('img').rawAttrs.split(' ')
+            const label = part.querySelector('p').innerText
+            // We customize the attributes to plug into an img tag on our view, then add the label so we can display it on our page too
+            content = 'alt="' + label + '" ' + imgTagAttrs[2] + ' ' + imgTagAttrs[3] + ' ' + imgTagAttrs[4] + 'SPLIT!' + label
           }
+
+          chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index] = {}
+          chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].content = content
+          chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].type_id = type
           index++
+          
         }
       )
     }
@@ -257,6 +258,7 @@ chapNums.forEach(
       (sectKey) => {
         const section = chapter.sections[sectKey]
         const partIndicies = Object.keys(section.parts)
+
         if (first) {
           writeFileSync(fd, `('${sectId}', '${section.parts[0].type_id}', '${partIndicies[0]}', '${section.parts[0].content}')`)
           partIndicies.slice(1).forEach(
