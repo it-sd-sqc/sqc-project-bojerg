@@ -11,7 +11,7 @@
   let first = true
   sections.forEach( (part) => {
     if(part.section_id !== lastSectionId) {
-      //Should write the Title
+      // New section, new title!!!
       lastSectionId = part.section_id
 
       if(first) {
@@ -20,32 +20,31 @@
       } else {
         %> </section><section> <h3><%= chapter + '.' + part.sect_num + ' ' + part.title %></h3> <%
       }
-    } else {
-      switch(part.type) {
-		case 1: //paragraph
-			%> <p><%= part.content %></p> <% break
-		case 2: //letter
-			%> <p class='letter'><%= part.content %></p> <% break
-		case 3: //footnote
-			%> <sup><%= part.content %></sup> <% break
-		case 4: //noindent
-			%> <p class='noindent'><%= part.content %></p> <% break
-		case 5: //diagram
-			%> <pre class='diagram'><%= part.content %></pre> <% break
-		case 6: //code
-			%> <code><%= part.content %></code> <% break
-		case 7: //non section header
-			%> <h4><%= part.content %></h4> <% break
-		case 8: //image
-			%> <img class='content-image' <%- part.content.split("SPLIT!")[0] %>>
-			<h5><%= part.content.split("SPLIT!")[1] %></h5> <% break
-		case 9: //list
-			%> <ul> <%
-			part.content.split('◼').slice(1).forEach( (listItem) => { 
-				%> <li><%- listItem %></li> <%
-			})
-			%> </ul> <% break 
-	  }
+    } 
+    switch(part.type) {
+	  case 1: //paragraph
+		%> <p><%= part.content %></p> <% break
+	  case 2: //letter
+		%> <p class='letter'><%= part.content %></p> <% break
+	  case 3: //footnote
+		%> <sup><%= part.content %></sup> <% break
+	  case 4: //noindent
+		%> <p class='noindent'><%= part.content %></p> <% break
+	  case 5: //diagram
+		%> <pre class='diagram'><%= part.content %></pre> <% break
+	  case 6: //code
+		%> <code><%= part.content %></code> <% break
+	  case 7: //non section header
+		%> <h4><%= part.content %></h4> <% break
+	  case 8: //image
+		%> <img class='content-image' <%- part.content.split("SPLIT!")[0] %>>
+		<h5><%= part.content.split("SPLIT!")[1] %></h5> <% break
+	  case 9: //list
+		%> <ul> <%
+		part.content.split('◼').slice(1).forEach( (listItem) => { 
+			%> <li><%- listItem %></li> <%
+		})
+		%> </ul> <% break 
     }
   }) %>
 </section>
