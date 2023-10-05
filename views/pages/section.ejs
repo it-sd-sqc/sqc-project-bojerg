@@ -1,7 +1,21 @@
 <%- include('../shared/header.ejs') %>
 <div id='sidebar-nav-div'>
   <nav id='sidebar-nav'>
-    
+    <ol class="chapter-list-item">
+		<% let navChapter = 1 
+		while(table[navChapter]) { %>
+			<li class="chapter-list-item"><%= table[navChapter][0] %>
+			<ol class="section-sublist" id="<%= navChapter%>" style="display: none;">
+		  <% let navSection = 1 %>
+		  <% while(table[navChapter][navSection]) { %>
+			  <li><%= table[navChapter][navSection] %></a></li>
+			  <% navSection++
+		  } %>
+			</ol>
+			</li>
+			<% navChapter++
+		} %>
+		</ol>
   </nav>
 </div>
 <div class="content-div">

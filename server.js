@@ -65,8 +65,9 @@ express()
   .get('/book/:ch(\\d+)', async function (req, res) {
     const chapter = req.params.ch
     const sections = await getChapter(chapter)
+    const table = await getTableOfContents()
     if (sections[0]?.title) {
-      res.render('pages/section', { sections, chapter })
+      res.render('pages/section', { sections, chapter, table })
     } else {
       res.redirect('/book')
     }
