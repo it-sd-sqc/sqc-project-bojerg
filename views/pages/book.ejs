@@ -1,7 +1,7 @@
 <%- include('../shared/header.ejs') %>
-<div class="content-div" id="chapter-list">
-  <h2 class="chapter-list-item">Table of Contents</h2>
-  <ol class="chapter-list-item">
+<div class="table-of-content">
+  <h2>Table of Content</h2>
+  <ol id="chapter-list">
   <% let chapter = 1 %>
   <% while(table[chapter]) { %>
 	  <li class="chapter-list-item"><a href="/book/<%= chapter %>"><%= table[chapter][0] %></a>

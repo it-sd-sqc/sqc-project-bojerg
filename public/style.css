@@ -29,13 +29,19 @@ header {
   height: 60px;
   width: 100vw;
   border-bottom: medium solid var(--debian-red);
+  z-index: 1;
 }
 
 section {
-  padding: 4px 6vw 2vh 6vw;
+  padding: 4px 6vw 2vh;
 }
 
-section > h2, h3, h4, h5, p, code, pre, ul {
+section img {
+  margin: auto;
+  display: block;
+}
+
+section h2, h3, h4, h5, p, code, pre, ul {
   padding-bottom: 1vh;
 }
 
@@ -45,6 +51,36 @@ h1, h2, h3, h4, h5 {
 
 h1, h2, h3, hr {
   color: var(--debian-red);
+}
+
+ol {
+	padding-left: inherit;
+}
+
+article {
+  padding: 80px 10vw 0 20vw;
+}
+
+section > p {
+  text-indent: 18px;
+}
+
+.noindent {
+  text-indent: 0;
+}
+
+.center-p {
+  text-align: center;
+}
+
+.center-div {
+  padding: 80px 26vw;
+}
+
+.table-of-content {
+  padding: 80px 16vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -72,23 +108,15 @@ h1, h2, h3, hr {
   width: 128px;
   top: 48px;
   right: 1.5vw;
-  border: medium solid var(--debian-red);
+  border: medium groove var(--debian-red);
   border-radius: 9px;
   background-color: var(--off-white);
   padding: 12px;
   gap: 12px;
 }
 
-.content-div {
-  padding: 80px 10vw 0;
-}
-
-section > p {
-  text-indent: 18px;
-}
-
-section > .no-indent {
-  text-indent: 0;
+.book-page {
+  display: flex;
 }
 
 .dark {
@@ -101,24 +129,35 @@ section > .no-indent {
   color: var(--off-white);
 }
 
-#chapter-list {
-	align-self: center;
-	display: flex;
-	flex-direction: column;
+.chapter-list-item {
+	align-self: flex-start;
+  padding-left: 12px;
 }
 
-#chapter-list-item {
-	align-self: center;
-}
-
-#section-sublist {
-	align-self: center;
+.section-sublist {
+	align-self: flex-end;
 	display: flex;
 	flex-direction: column;
 	justify-content: inherit;
 	padding-left: 0.5em;
 }
 
-ol {
-	padding-left: inherit;
+/* Adapted from https://www.w3schools.com/howto/howto_js_sidenav.asp */
+.sidebar-nav {
+  height: 100%;
+  width: 18vw;
+  padding: 80px 0 0 4px;
+  position: fixed;
+  z-index: 0;
+  overflow-x: hidden;
+  background-color: var(--off-white);
+  border-right: thick groove var(--debian-red);
+  list-style-position: inside;
+}
+
+#chapter-list {
+  align-self: center;
+	display: flex;
+	flex-direction: column;
+  padding-left: 4vw;
 }
