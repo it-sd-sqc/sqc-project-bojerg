@@ -16,4 +16,16 @@ $(document).ready(function () {
       $('.nav-bars-dropdown').addClass('dark-accent')
     }
   })
+
+  $('.sidebar-li').on('click', function () {
+    let $selected = $(this).find('.section-sublist')
+    $selected.toggle()
+
+    // Hide any previously selected section sublists
+    $('.section-sublist').each( function () {
+      if ($(this).id !== $selected.id) {
+        $(this).hide()
+      }
+    })
+  })
 })
