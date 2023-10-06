@@ -4,8 +4,8 @@
   <ol id="chapter-list">
   <% let chapter = 1 %>
   <% while(table[chapter]) { %>
-	  <li class="chapter-list-item"><a href="/book/<%= chapter %>"><%= table[chapter][0] %></a>
-	  <ol class="section-sublist" id="<%= chapter%>" style="display: none;">
+	  <li class="chapter-li"><a href="/book/<%= chapter %>"><%= table[chapter][0] %></a>
+	  <ol class="section-sublist" id="toc-<%= chapter%>" style="display: none;">
     <% let section = 1 %>
     <% while(table[chapter][section]) { %>
 	    <li><%= table[chapter][section] %></a></li>

@@ -5,10 +5,11 @@
 		<% let navChapter = 1 
 		while(table[navChapter]) { %>
 			<li class='sidebar-li'><%= table[navChapter][0] %>
-			<ol class="section-sublist" id="sidebar-nav-sublist-<%=navChapter%>" style="display: none;">
+			<ol class="section-sublist selected" id="sidebar-nav-sublist-<%=navChapter%>" style="display: none;">
+        <li value='0'><a href="/book/<%=navChapter%>"><%= table[navChapter][0] %></a></li>
 		  <% let navSection = 1 %>
 		  <% while(table[navChapter][navSection]) { %>
-			  <li><%= table[navChapter][navSection] %></li>
+			  <li class='sublist-li'><a href="/book/<%=navChapter + '#' + navChapter + '.' + navSection%>"><%= table[navChapter][navSection] %></a></li>
 			  <% navSection++
 		  } %>
 			</ol>

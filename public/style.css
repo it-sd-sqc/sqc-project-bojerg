@@ -1,6 +1,7 @@
 :root {
   --debian-red: #cd0237;
-  --pale-gold: #cc9602;
+  --peach: #d34e36;
+  --peach-accent: #e07f47;
   --light-pink: #fff1f1;
   --off-white: #fcfbf8;
   --bg-dark-mode: #111;
@@ -129,7 +130,7 @@ section > p {
   color: var(--off-white);
 }
 
-.chapter-list-item {
+.chapter-li {
 	align-self: flex-start;
   padding-left: 12px;
 }
@@ -146,13 +147,32 @@ section > p {
 .sidebar-nav {
   height: 100%;
   width: 18vw;
-  padding: 80px 0 0 4px;
+  padding-top: 80px;
   position: fixed;
   z-index: 0;
   overflow-x: hidden;
   background-color: var(--off-white);
   border-right: thick groove var(--debian-red);
   list-style-position: inside;
+}
+
+.sidebar-li {
+  background-color: var(--peach);
+  font-size: large;
+  text-indent: 10px;
+  border-radius: 4px;
+  padding-top: 4px;
+  margin: 12px 4px;
+}
+
+.selected {
+  background-color: var(--peach-accent);
+  border-radius: 0 0 4px 4px;
+  font-size: medium;
+}
+
+.sublist-li {
+  padding: 2px 3px;
 }
 
 #chapter-list {
