@@ -1,4 +1,4 @@
-﻿import { parse } from 'node-html-parser'
+import { parse } from 'node-html-parser'
 import { closeSync, openSync, readFileSync, writeFileSync } from 'node:fs'
 
 const dstPath = 'docs/generated-schema.sql'
@@ -191,7 +191,6 @@ bookParts.forEach(
           chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].content = content
           chapters[chapterAndSection[0]].sections[chapterAndSection[1]].parts[index].type_id = type
           index++
-          
         }
       )
     }

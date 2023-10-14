@@ -1,8 +1,7 @@
 $(document).ready(function () {
-
   let currentChapter = 0
   let $currentSidebarChapter = null
-  if(Object.keys($('.sidebar-li')).length > 2) {
+  if (Object.keys($('.sidebar-li')).length > 2) {
     // We are in a book chapter
     currentChapter = window.location.href.split('book/')[1].substring(0, 1)
     $currentSidebarChapter = $('#sidebar-nav-sublist-' + currentChapter)
@@ -31,8 +30,8 @@ $(document).ready(function () {
 
   // Dynamic sidebar nav in section.ejs
   $('.sidebar-li').on('click', function () {
-    let $selected = $(this).find('.section-sublist')
-    let id = $selected[0].id
+    const $selected = $(this).find('.section-sublist')
+    const id = $selected[0].id
 
     // Keep current chapter open at all times
     if (id !== $currentSidebarChapter[0].id) {
@@ -40,7 +39,7 @@ $(document).ready(function () {
     }
 
     // Hide any previously selected section sublists
-    $('.section-sublist').each( function () {
+    $('.section-sublist').each(function () {
       if ($(this)[0].id !== id && $currentSidebarChapter[0].id !== $(this)[0].id) {
         $(this).hide()
       }
