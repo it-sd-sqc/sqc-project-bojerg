@@ -33,8 +33,18 @@ header {
   z-index: 1;
 }
 
+article {
+  padding: 80px 10vw 0 20vw;
+  overflow-x: hidden;
+}
+
 section {
-  padding: 4px 6vw 2vh;
+  padding: 0.25em;
+}
+
+section * {
+  padding-bottom: 1em;
+  display: block;
 }
 
 section img {
@@ -42,8 +52,19 @@ section img {
   display: block;
 }
 
-section h2, h3, h4, h5, p, code, pre, ul {
-  padding-bottom: 1vh;
+section p {
+  text-indent: 18px;
+}
+
+.noindent {
+  text-indent: 0;
+}
+
+pre {
+  overflow: scroll;
+  background-color: var(--peach-accent);
+  padding: 0.5em;
+  border-radius: 1em;
 }
 
 h1, h2, h3, h4, h5 {
@@ -60,18 +81,6 @@ h1 {
 
 ol {
 	padding-left: inherit;
-}
-
-article {
-  padding: 80px 10vw 0 20vw;
-}
-
-section > p {
-  text-indent: 18px;
-}
-
-.noindent {
-  text-indent: 0;
 }
 
 .center-p {
@@ -183,5 +192,20 @@ section > p {
   align-self: center;
 	display: flex;
 	flex-direction: column;
-  padding-left: 4vw;
+  padding-left: 7.5vw;
+}
+
+.chapter-li {
+  padding-top: 0.5em;
+  font-size: 1.25em;
+}
+
+@media (max-width: 1081px) {
+  .sidebar-nav {
+    display: none;
+  }
+
+  article {
+    padding: 80px 8vw;
+  }
 }
