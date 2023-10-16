@@ -1,5 +1,5 @@
 :root {
-  --debian-red: #cd0237;
+  --debian-red: #a80030;
   --peach: #d34e36;
   --peach-accent: #e07f47;
   --light-pink: #fff1f1;
@@ -54,6 +54,10 @@ h1, h2, h3, hr {
   color: var(--debian-red);
 }
 
+h1 {
+  font-size: 1.75em;
+}
+
 ol {
 	padding-left: inherit;
 }
@@ -75,7 +79,7 @@ section > p {
 }
 
 .center-div {
-  padding: 80px 26vw;
+  padding: 80px 12vw;
 }
 
 .table-of-content {
@@ -97,7 +101,7 @@ section > p {
   height: 2em;
   width: 2em;
   top: 12px;
-  right: 1.5vw;
+  right: 3vw;
   
 }
 
