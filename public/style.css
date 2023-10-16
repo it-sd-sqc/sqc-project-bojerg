@@ -1,0 +1,183 @@
+:root {
+  --debian-red: #cd0237;
+  --peach: #d34e36;
+  --peach-accent: #e07f47;
+  --light-pink: #fff1f1;
+  --off-white: #fcfbf8;
+  --bg-dark-mode: #111;
+  --bg-dark-mode-accent: #181818;
+}
+
+* { /* CSS reset https://www.freecodecamp.org/news/html-page-width-height/ */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--light-pink);
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  padding-top: 12px;
+  background-color: var(--off-white);
+  height: 60px;
+  width: 100vw;
+  border-bottom: medium solid var(--debian-red);
+  z-index: 1;
+}
+
+section {
+  padding: 4px 6vw 2vh;
+}
+
+section img {
+  margin: auto;
+  display: block;
+}
+
+section h2, h3, h4, h5, p, code, pre, ul {
+  padding-bottom: 1vh;
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+}
+
+h1, h2, h3, hr {
+  color: var(--debian-red);
+}
+
+ol {
+	padding-left: inherit;
+}
+
+article {
+  padding: 80px 10vw 0 20vw;
+}
+
+section > p {
+  text-indent: 18px;
+}
+
+.noindent {
+  text-indent: 0;
+}
+
+.center-p {
+  text-align: center;
+}
+
+.center-div {
+  padding: 80px 26vw;
+}
+
+.table-of-content {
+  padding: 80px 16vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  top: 12px;
+  left: 1.5vw;	
+}
+
+.bars-icon {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  top: 12px;
+  right: 1.5vw;
+  
+}
+
+.nav-bars-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: auto;
+  width: 128px;
+  top: 48px;
+  right: 1.5vw;
+  border: medium groove var(--debian-red);
+  border-radius: 9px;
+  background-color: var(--off-white);
+  padding: 12px;
+  gap: 12px;
+}
+
+.book-page {
+  display: flex;
+}
+
+.dark {
+  background-color: var(--bg-dark-mode);
+  color: var(--off-white);
+}
+
+.dark-accent {
+  background-color: var(--bg-dark-mode-accent);
+  color: var(--off-white);
+}
+
+.chapter-li {
+	align-self: flex-start;
+  padding-left: 12px;
+}
+
+.section-sublist {
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+	justify-content: inherit;
+	padding-left: 0.5em;
+}
+
+/* Adapted from https://www.w3schools.com/howto/howto_js_sidenav.asp */
+.sidebar-nav {
+  height: 100%;
+  width: 18vw;
+  padding-top: 80px;
+  position: fixed;
+  z-index: 0;
+  overflow-x: hidden;
+  background-color: var(--off-white);
+  border-right: thick groove var(--debian-red);
+  list-style-position: inside;
+}
+
+.sidebar-li {
+  background-color: var(--peach);
+  font-size: large;
+  text-indent: 10px;
+  border-radius: 4px;
+  padding-top: 4px;
+  margin: 12px 4px;
+}
+
+.selected {
+  background-color: var(--peach-accent);
+  border-radius: 0 0 4px 4px;
+  font-size: medium;
+}
+
+.sublist-li {
+  padding: 2px 3px;
+}
+
+#chapter-list {
+  align-self: center;
+	display: flex;
+	flex-direction: column;
+  padding-left: 4vw;
+}
