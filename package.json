@@ -9,8 +9,7 @@
   },
   "scripts": {
     "generate": "node tools/html-to-sql.js && psql -U postgres -f ./docs/generated-schema.sql",
-    "gen-no-sql": "node tools/html-to-sql.js",
-    "test": "c8 jasmine && standard \"spec/**/*.js\" && ejslint \"views/**/*.ejs\" && html-validate \"public/**/*.html\" && stylelint \"**/*.css\""
+    "test": "standard \"spec/**/*.js\" && ejslint \"views/**/*.ejs\" && html-validate \"public/**/*.html\" && stylelint \"**/*.css\""
   },
   "standard": {
     "env": [
@@ -23,6 +22,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "c8": "^8.0.1",
     "ejs-lint": "^2.0.0",
     "html-validate": "^8.3.0",
     "jasmine": "^5.1.0",
