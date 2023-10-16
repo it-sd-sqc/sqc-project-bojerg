@@ -10,11 +10,13 @@
   "scripts": {
     "generate": "node tools/html-to-sql.js && psql -U postgres -f ./docs/generated-schema.sql",
     "gen-no-sql": "node tools/html-to-sql.js",
-    "test": "standard --fix \"**/*.js\" && stylelint \"**/*.css\" && html-validate \"public/**/*.html\" && ejslint \"views/**/*.ejs\""
+    "test": "c8 jasmine && standard \"spec/**/*.js\" && ejslint \"views/**/*.ejs\" && html-validate \"public/**/*.html\" && stylelint \"**/*.css\""
   },
   "standard": {
     "env": [
-      "jquery"
+      "jquery",
+      "jasmine",
+      "node"
     ]
   },
   "keywords": [],
@@ -23,6 +25,7 @@
   "devDependencies": {
     "ejs-lint": "^2.0.0",
     "html-validate": "^8.3.0",
+    "jasmine": "^5.1.0",
     "node-html-parser": "^6.1.10",
     "selenium-webdriver": "^4.12.0",
     "standard": "^17.1.0",
