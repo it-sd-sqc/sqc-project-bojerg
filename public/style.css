@@ -163,7 +163,7 @@ ol {
 /* Adapted from https://www.w3schools.com/howto/howto_js_sidenav.asp */
 .sidebar-nav {
   height: 100%;
-  width: 18vw;
+  width: 21vw;
   padding-top: 80px;
   position: fixed;
   z-index: 1;
@@ -189,7 +189,12 @@ ol {
 }
 
 .sublist-li {
-  padding: 2px 3px;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+.sublist-li a {
+  text-decoration: none;
 }
 
 #chapter-list {
@@ -220,6 +225,8 @@ ol {
   border: solid var(--debian-red);
   border-radius: 0.5em;
   text-align: center;
+  text-decoration: none;
+  color: #111;
 }
 
 .center-link-btn-div {
@@ -228,6 +235,11 @@ ol {
   justify-content: center;
 	display: inline-flex;
   flex-wrap: wrap;
+}
+
+#dark-mode-btn {
+  color: #111;
+  font-size: 1em;
 }
 
 @media (max-width: 1081px) {

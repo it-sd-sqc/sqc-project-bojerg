@@ -6,7 +6,7 @@
 		while(table[navChapter]) { %>
 			<li class='sidebar-li'><%= table[navChapter][0] %>
 			<ol class="section-sublist selected" id="sidebar-nav-sublist-<%=navChapter%>" style="display: none;">
-        <li value='0'><a href="/book/<%=navChapter%>"><%= table[navChapter][0] %></a></li>
+        <li value='0' class='sublist-li'><a href="/book/<%=navChapter%>"><%= table[navChapter][0] %></a></li>
 		  <% let navSection = 1 %>
 		  <% while(table[navChapter][navSection]) { %>
 			  <li class='sublist-li'><a href="/book/<%=navChapter + '#' + navChapter + '.' + navSection%>"><%= table[navChapter][navSection] %></a></li>
@@ -63,8 +63,8 @@
     }) %>
     </section>
     <div class="center-link-btn-div">
-      <% if(chapter < 13) { %> <a class="link-btn" href="/book/<%- Number(chapter) + 1 %>">Next</a> <% } %>
       <% if(chapter > 1) { %> <a class="link-btn" href="/book/<%- Number(chapter) - 1 %>">Prev</a> <% } %>
+      <% if(chapter < 13) { %> <a class="link-btn" href="/book/<%- Number(chapter) + 1 %>">Next</a> <% } %>
     </div>
   </article>
 </div>
