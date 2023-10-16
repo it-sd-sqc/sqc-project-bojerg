@@ -32,7 +32,7 @@
           %> <h2><%= chapter + '. ' + part.title %></h2> <%
           first = false
         } else {
-          %> </section><section> <h3><%= chapter + '.' + part.sect_num + ' ' + part.title %></h3> <%
+          %> </section><section> <h3 id="<%- chapter + '.' + part.sect_num %>"><%= chapter + '.' + part.sect_num + ' ' + part.title %></h3> <%
         }
       } 
       switch(part.type) {
@@ -62,6 +62,10 @@
       }
     }) %>
     </section>
+    <div class="center-link-btn-div">
+      <% if(chapter < 13) { %> <a class="link-btn" href="/book/<%- Number(chapter) + 1 %>">Next</a> <% } %>
+      <% if(chapter > 1) { %> <a class="link-btn" href="/book/<%- Number(chapter) - 1 %>">Prev</a> <% } %>
+    </div>
   </article>
 </div>
 <%- include('../shared/footer.ejs') %>

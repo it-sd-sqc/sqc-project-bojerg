@@ -204,7 +204,7 @@ ol {
   font-size: 1.25em;
 }
 
-.link-btn {
+.link-btn{
   background-color: var(--peach);
   border: solid var(--debian-red);
   padding: 0.25em 0.5em;
@@ -212,6 +212,13 @@ ol {
   border-radius: 0.5em;
   font-size: 1.25em;
   width: 6em;
+  text-align: center;
+}
+
+.link-btn-sm {
+  background-color: var(--peach);
+  border: solid var(--debian-red);
+  border-radius: 0.5em;
   text-align: center;
 }
 
