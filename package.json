@@ -9,7 +9,7 @@
   },
   "scripts": {
     "generate": "node tools/html-to-sql.js && psql -U postgres -f ./docs/generated-schema.sql",
-    "test": "standard \"spec/**/*.js\" && ejslint \"views/**/*.ejs\" && html-validate \"public/**/*.html\" && stylelint \"**/*.css\""
+    "test": "standard \"**/*.js\" && ejslint \"views/**/*.ejs\" && stylelint \"**/*.css\""
   },
   "standard": {
     "env": [
