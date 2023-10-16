@@ -30,7 +30,7 @@ header {
   height: 60px;
   width: 100vw;
   border-bottom: medium solid var(--debian-red);
-  z-index: 1;
+  z-index: 2;
 }
 
 article {
@@ -162,7 +162,7 @@ ol {
   width: 18vw;
   padding-top: 80px;
   position: fixed;
-  z-index: 0;
+  z-index: 1;
   overflow-x: hidden;
   background-color: var(--off-white);
   border-right: thick groove var(--debian-red);
@@ -203,6 +203,7 @@ ol {
 @media (max-width: 1081px) {
   .sidebar-nav {
     display: none;
+    width: 60vw;
   }
 
   article {

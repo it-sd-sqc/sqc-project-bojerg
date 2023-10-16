@@ -11,6 +11,19 @@ $(document).ready(function () {
   // Bars dropdown
   $('.bars-icon').on('click', function () {
     $('.nav-bars-dropdown').toggle()
+    $('article').css('opacity', '1')
+
+    const $nav = $('.sidebar-nav')
+    // Toggle sidebar with bars click (mobile media query)
+    if (window.matchMedia('(max-width: 1081px)').matches) {
+      if ($nav.is(':visible')) {
+        $('article').css('opacity', '1')
+      } else {
+        $('article').css('opacity', '0.5')
+      }
+
+      $nav.toggle()
+    }
   })
 
   // Site-wide darkmode
