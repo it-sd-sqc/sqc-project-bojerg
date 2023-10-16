@@ -36,6 +36,8 @@ header {
 article {
   padding: 80px 10vw 0 20vw;
   overflow-x: hidden;
+  max-width: 80%;
+  margin-left: 9vw;
 }
 
 section {
@@ -89,6 +91,8 @@ ol {
 
 .center-div {
   padding: 80px 12vw;
+  max-width: 80%;
+  margin-left: 9vw;
 }
 
 .table-of-content {
@@ -200,6 +204,25 @@ ol {
   font-size: 1.25em;
 }
 
+.link-btn {
+  background-color: var(--peach);
+  border: solid var(--debian-red);
+  padding: 0.25em 0.5em;
+  margin: 0.5em 2em;
+  border-radius: 0.5em;
+  font-size: 1.25em;
+  width: 6em;
+  text-align: center;
+}
+
+.center-link-btn-div {
+  margin-top: 2em;
+  width: 100%;
+  justify-content: center;
+	display: inline-flex;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1081px) {
   .sidebar-nav {
     display: none;
@@ -208,5 +231,12 @@ ol {
 
   article {
     padding: 80px 8vw;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .center-div {
+    max-width: 100%;
+    margin-left: 0;
   }
 }
