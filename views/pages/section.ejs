@@ -51,7 +51,7 @@
       case 7: //non section header
       %> <h4><%= part.content %></h4> <% break
       case 8: //image
-      %> <img class='content-image' <%- part.content.split("SPLIT!")[0] %>>
+      %><div class="img-wrap"><img class='content-image' <%- part.content.split("SPLIT!")[0] %>></div>
       <h5><%= part.content.split("SPLIT!")[1] %></h5> <% break
       case 9: //list
       %> <ul> <%
