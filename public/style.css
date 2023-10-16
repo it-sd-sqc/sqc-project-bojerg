@@ -51,13 +51,9 @@ section * {
 
 section img {
   margin: auto;
-  display: inline-block;
-}
-
-.img-wrap img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
+  display: block;
+  background-color: var(--light-pink);
+  padding-bottom: 0;
 }
 
 section p {
@@ -143,19 +139,10 @@ ol {
   display: flex;
 }
 
-.dark {
-  background-color: var(--bg-dark-mode);
-  color: var(--off-white);
-}
-
-.dark-accent {
-  background-color: var(--bg-dark-mode-accent);
-  color: var(--off-white);
-}
-
 .chapter-li {
 	align-self: flex-start;
-  padding-left: 12px;
+  padding: 0.5em 0 0 12px;
+  font-size: 1.25em;
 }
 
 .section-sublist {
@@ -184,7 +171,7 @@ ol {
   font-size: large;
   text-indent: 10px;
   border-radius: 4px;
-  padding-top: 4px;
+  padding: 4px 0;
   margin: 12px 4px;
 }
 
@@ -196,6 +183,7 @@ ol {
 
 .sublist-li {
   padding: 4px 6px;
+  margin-bottom: 4px;
   text-decoration: none;
 }
 
@@ -210,11 +198,6 @@ ol {
   padding-left: 7.5vw;
 }
 
-.chapter-li {
-  padding-top: 0.5em;
-  font-size: 1.25em;
-}
-
 .link-btn{
   background-color: var(--peach);
   border: solid var(--debian-red);
@@ -224,6 +207,8 @@ ol {
   font-size: 1.25em;
   width: 6em;
   text-align: center;
+  text-decoration: none;
+  color: var(--off-white);
 }
 
 .link-btn-sm {
@@ -232,7 +217,7 @@ ol {
   border-radius: 0.5em;
   text-align: center;
   text-decoration: none;
-  color: #111;
+  color: var(--off-white);
 }
 
 .center-link-btn-div {
@@ -244,11 +229,11 @@ ol {
 }
 
 #dark-mode-btn {
-  color: #111;
+  color: var(--off-white);
   font-size: 1em;
 }
 
-@media (max-width: 1081px) {
+@media (width <= 1080px) {
   .sidebar-nav {
     display: none;
     width: 60vw;
@@ -264,4 +249,39 @@ ol {
     max-width: 100%;
     margin-left: 0;
   }
+
+  section img {
+    display: inline-block;
+  }
+
+  .img-wrap img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.dark {
+  background-color: var(--bg-dark-mode);
+  color: var(--off-white);
+}
+
+.dark a:visited {
+  color: var(--peach-accent);
+}
+
+.dark-accent {
+  background-color: var(--bg-dark-mode-accent);
+  color: var(--off-white);
+}
+
+
+.dark-accent a:link {
+  color: var(--off-white);
+  text-decoration: underline;
+}
+
+.dark-accent a:visited {
+  color: var(--off-white);
+  text-decoration: underline;
 }

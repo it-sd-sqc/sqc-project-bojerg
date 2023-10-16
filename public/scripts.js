@@ -27,17 +27,31 @@ $(document).ready(function () {
   })
 
   // Site-wide darkmode
+  if (window.localStorage.getItem('darkMode') === 'OFF') {
+    $('body').addClass('dark')
+    $('h2, h3').addClass('dark')
+    $('header').addClass('dark-accent')
+    $('.nav-bars-dropdown').addClass('dark-accent')
+    $('.sidebar-nav').addClass('dark-accent')
+    $('.link-btn').addClass('dark-accent')
+  }
   $('#dark-mode-btn').on('click', function () {
     if ($('body').hasClass('dark')) {
+      window.localStorage.setItem('darkMode', 'ON')
       $('body').removeClass('dark')
       $('h2, h3').removeClass('dark')
       $('header').removeClass('dark-accent')
       $('.nav-bars-dropdown').removeClass('dark-accent')
+      $('.sidebar-nav').removeClass('dark-accent')
+      $('.link-btn').removeClass('dark-accent')
     } else {
+      window.localStorage.setItem('darkMode', 'OFF')
       $('body').addClass('dark')
       $('h2, h3').addClass('dark')
       $('header').addClass('dark-accent')
       $('.nav-bars-dropdown').addClass('dark-accent')
+      $('.sidebar-nav').addClass('dark-accent')
+      $('.link-btn').addClass('dark-accent')
     }
   })
 
